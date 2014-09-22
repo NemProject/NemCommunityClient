@@ -48,7 +48,7 @@ define({
         			1: 'une journée',
         			many: '{{1}} jours'
         		},
-        		synchronized: 'NIS is synchronized!'
+        		synchronized: 'NIS est synchronisé!'
         	}
         },
 		modals: {
