@@ -4,7 +4,7 @@ define({
 	texts: {
 		preferences: {
 			thousandSeparator: '\u2009',
-			decimalSeparator: '.'
+			decimalSeparator: ','
 		},
 		faults: {
             101: 'File non trovato.',
@@ -39,7 +39,7 @@ define({
         common: {
         	success: 'Operazione completata', //title of the Success message modals
         	nisStatus: {
-        		nccUnavailable: 'NCC is not available',
+        		nccUnavailable: 'NCC non disponibile',
         		unavailable: 'NIS non disponibile',
         		notBooted: 'NIS richiede di essere avviato. Apri il tuo portafoglio ed avvia il nodo locale.',
         		synchronizing: 'Sincronizzazione NIS in corso. Al blocco {{1}}, {{2}} indietro.',
@@ -48,7 +48,7 @@ define({
                     1: 'un giorno',
                     many: '{{1}} giorni'
                 },
-        		synchronized: 'NIS is synchronized!'
+        		synchronized: 'NIS è sinronizzato!'
         	}
         },
 		modals: {
@@ -247,7 +247,7 @@ define({
 						title: "Cos'è &#42;NIS?",
 						paragraphs: [
 							'Fa funzionare la rete <strong>NEM</strong>.',
-							'Più server <strong>NIS</strong> esistono più la rete è sicura.',
+							'Più server <strong>NIS</strong> esistono più la rete è sicura',
 							'<strong>NIS</strong> è il punto di accesso alla rete <strong>NEM</strong>.'
 						],
 						legend: "<strong>&#42;NIS</strong> è l'acronimo di <strong>NEM Infrastructure Server</strong>"
