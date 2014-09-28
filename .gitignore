@@ -17,3 +17,4 @@ nem-client-api/building/META-INF/MANIFEST.MF
 nem-client-api/building/buildPackage-ws-sign-ncc.sh
 nem-client-api/building/copy-ws.bat
 nem-client-api/building/copy-ws.sh
+node_modules
