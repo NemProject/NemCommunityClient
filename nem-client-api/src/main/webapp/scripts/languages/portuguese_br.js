@@ -24,7 +24,7 @@ define({
             500: 'Falha ao salvar o arquivo de configuração.',
             600: 'NCC requer que o NIS seja inicializado. Por favor, vá em cliente NCC para inicializar o nó local.',
 	    601: 'O NIS já foi inicializado.',
-            700: 'Falha na colheita. Geralmente esse problema é relacionado com o tanto de NEMs na conta. Para colheitar são necessários, pelo menos, 1000 NEMs.',
+            700: 'Falha na colheita. Geralmente esse problema é relacionado com o tanto de NEMs na conta. Para colheitar são necessários, pelo menos, 1000 NEMs e mais 24 horas após o depósito.',
             701: 'O prazo final fornecido está no passado. O prazo limite deve estar dentro do período de um dia.',
             702: 'O prazo final está muito no futuro. O prazo limite deve estar dentro do período de um dia.',
             703: 'Saldo insuficiente.',
@@ -39,15 +39,15 @@ define({
         common: {
         	success: 'Successo', //titulo de mensagens de sucesso
         	appStatus: {
-        		nccUnknown: 'NCC status is unknown',
+        		nccUnknown: 'Estado da NCC é desconhecido!',
         		nccUnavailable: 'NCC não inicializado',
-        		nccStarting: 'NCC is starting...',
-        		nisUnknown: 'NIS status is unknown',
+        		nccStarting: 'NCC está inicializando...',
+        		nisUnknown: 'O estado do NCC é desconhecido',
         		nisUnavailable: 'NIS não inicializado',
-        		nisStarting: 'NIS is starting...',
-        		notBooted: 'NIS requires to be booted. Please open your wallet and boot a local node via the popup dialog or configure the auto-boot setting.',
-        		booting: 'Booting NIS...',
-        		nisInfoNotAvailable: 'NIS info is not avaiable yet. Trying to retrieve NIS info...',
+        		nisStarting: 'NIS está inicializando...',
+        		notBooted: 'NIS necessita ser inicializado. Por favor, abra sua carteira e inicialize o nó de rede NIS via diálogo pop-up ou configure a opção de auto-inicialização.',
+        		booting: 'Inicializando o NIS...',
+        		nisInfoNotAvailable: 'Informações NIS ainda não estão disponíveis. Tentando recuperar informações do cliente NIS...',
         		synchronizing: 'NIS está sincronizando com o bloco {{1}}. Encontrado {{2}} atrás.',
         		daysBehind: {
         			0: 'Menos de um dia',
@@ -56,9 +56,6 @@ define({
         		},
         		synchronized: 'NIS foi sincronizado!'
         	}
-        	// nisStatus: {
-        	// 	notBooted: 'NIS necessita ser inicializado. Por favor, abra a carteira e inicialize um nó local via diálogo pop-up.',
-        	// }
         },
 		modals: {
 			error: {
@@ -90,7 +87,7 @@ define({
 					primaryAccount: 'Conta primária',
 					auto: 'Inicialização automática quando abrir a carteira'
 				},
-				save: 'Save',
+				save: 'Salvar',
 				saveSuccess: 'Configurações salvas com sucesso!'
 			},
 			sendNem: {
@@ -110,15 +107,15 @@ define({
 				sending: 'Enviando...',
 				successMessage: 'Transação enviada com sucesso!',
 				txConfirm: {
-					title: 'Confirm Transaction',
-					sendLabel: "You're going to send",
-					to: 'To',
-					message: 'Message',
-					encrypted: 'Message is encrypted',
-					noMessage: 'No message',
-					cancel: 'Cancel',
-					send: 'Send',
-					sending: 'Sending...'
+					title: 'Confirmar Transacão',
+					sendLabel: "Você vai enviar",
+					to: 'Para',
+					message: 'Mensagem',
+					encrypted: 'Mensagem encriptada',
+					noMessage: 'Sem mensage,',
+					cancel: 'Cancelar',
+					send: 'Enviar',
+					sending: 'Enviando...'
 				}
 			},
 			clientInfo: {
@@ -135,9 +132,7 @@ define({
 			},
 			transactionDetails: {
 				title: 'Detalhes da transação',
-				// This might be block or transaction ID
 				id: 'ID',
-				// This might be block or transaction Hash
 				hash: 'Hash',
 				type: 'Tipo de transação',
 				pending: 'Pendente',
@@ -238,14 +233,14 @@ define({
 			},
 			shutdown: {
 				title: 'Fechar programa',
-				message: 'Tem certeza que quer fechar o programa (NIS/NCC)?' //talvez precise correção aqui
+				message: 'Tem certeza que quer fechar o programa (NIS/NCC)?'
 			}
 		},
 		landing: {
 			logo: 'images/nem_logo.png',
 			importSuccess: 'Carteira importada com sucesso!',
 			nav: {
-				start: 'Início', // ou primeiros passos, dependendo do contexto
+				start: 'Início', 
 				about: 'Sobre NEM',
 				settings: 'Configurações'
 			},
@@ -255,10 +250,10 @@ define({
 				walletNamePlh: 'Nome para a carteira',
 				passwordPlh: 'Senha',
 				create: 'Criar',
-				rightTitle: 'Já é um <em>NEM</em>bro?', //NEMbro soa estranho? "bro" em pt_BR é sinônimo de Brother
+				rightTitle: 'Já é um <em>NEM</em>bro?', 
 				rightButton: 'Abrir carteira existente',
 				openButton: 'Abrir',
-				walletsFound: 'Encontrada(s) <strong>{{1}}</strong> <em>carteira(s)</em>', //needs to verify if the "(s)" casues any kind of problem to compilation
+				walletsFound: 'Encontrada(s) <strong>{{1}}</strong> <em>carteira(s)</em>', 
 				copyright: 'Fotografado por <em>Cas Cornelissen</em>'
 			},
 			carousel: {
@@ -283,8 +278,8 @@ define({
 							'Você também pode configurar acesso a um servidor remoto <strong>NIS</strong>.'
 						],
 						listItems: [
-							'Tenha multiplas carteiras',
-							'Defina multiplas carteiras para serem incluidas em uma carteira'
+							'Tenha múltiplas carteiras',
+							'Defina múltiplas carteiras para serem incluídas em uma carteira'
 						]
 					},
 					{
@@ -310,7 +305,7 @@ define({
 			primary: 'primário',
 			primaryShort: '1º',
 			noLabel: '<Sem identificação>',
-			copiedToClipboard: 'Endereço copiado para a área de transfêrencia!',
+			copiedToClipboard: 'Endereço copiado para a área de transferência!',
 			actions: {
 				refreshInfo: 'Atualizar informações',
 				bootLocalNode: 'Inicializar nó local',
@@ -394,7 +389,7 @@ define({
 			news: {
 				titleTooltip: 'Novidades'
 			},
-			notAvailable: 'Não disponível na versão Alfa'
+			notAvailable: 'Não disponível na versão Alfa!'
 		},
 		transactions: {
 			title: 'Transações',
