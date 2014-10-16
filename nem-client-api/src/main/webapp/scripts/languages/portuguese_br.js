@@ -236,34 +236,34 @@ define({
 				message: 'Tem certeza que quer fechar o programa (NIS)?'
 			},
 			activateRemote: {
-				title: 'Activate Remote harvesting',
-				wallet: 'Wallet',
-				account: 'Account',
-				hoursDue: 'Hours due',
-				password: "Wallet's password",
-				activate: 'Activate'
+				title: 'Ativar colheita Remota',
+				wallet: 'Carteira',
+				account: 'Conta',
+				hoursDue: 'Devido por', //pode necessitar correção dependendo do que faz
+				password: "Senha da carteira",
+				activate: 'Ativar'
 			},
 			deactivateRemote: {
-				title: 'Deactivate Remote harvesting',
-				wallet: 'Wallet',
-				account: 'Account',
-				hoursDue: 'Hours due',
-				password: "Wallet's password",
-				deactivate: 'Deactivate'
+				title: 'Desativar a colheita remota',
+				wallet: 'Carteira',
+				account: 'Conta',
+				hoursDue: 'Devido por',
+				password: "Senha da carteira",
+				deactivate: 'Desativar'
 			},
 			startRemote: {
-				title: 'Start Remote harvesting',
-				wallet: 'Wallet',
-				account: 'Account',
-				password: "Wallet's password",
-				start: 'Start'
+				title: 'Começar colheita Remota',
+				wallet: 'Carteira',
+				account: 'Conta',
+				password: "Senha da carteira",
+				start: 'Começar'
 			},
 			stopRemote: {
-				title: 'Stop Remote harvesting',
-				wallet: 'Wallet',
-				account: 'Account',
-				password: "Wallet's password",
-				stop: 'Stop'
+				title: 'Parar colheita Remota',
+				wallet: 'Carteira',
+				account: 'Conta',
+				password: "Senha da carteira",
+				stop: 'Parar'
 			}
 		},
 		landing: {
