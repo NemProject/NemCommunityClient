@@ -13,57 +13,57 @@ define({
             104: "Das eingegebene Passwort ist nicht korrekt. Hoffentlich kannst Du Dich an das richtige Passwort erinnern. Ein verlorenes Passwort kann nicht wiederhergestellt werden!",
             106: "Bevor Du eine Brieftasche benutzen kannst, muss sie geöffnet werden. Um sicher zu gehen, dass Du berechtigt bist, die Brieftasche zu verwenden, musst Du das Passwort für die Brieftasche eingeben.",
             107: "Die Brieftasche enthält dieses Konto nicht.",
-            108: "Das Konto kann nicht entfernt werden. Der Grund ist meistens, dass der Kontostand größer als 0 NEM ist oder dass Du versuchst ein Hauptkonto zu entfernen.",
+            108: "Das Konto kann nicht entfernt werden. Der Grund ist meistens, dass der Kontostand größer als 0 NEM ist oder dass Du versuchst, ein Hauptkonto zu entfernen.",
             109: "Es gibt bereits eine Brieftasche mit demselben Namen. Bitte wähle einen anderen Namen für die Brieftasche.",
             110: "Die Brieftasche enthält dieses Konto schon.",
-            202: "Die verschlüsselte Nachricht kann nicht gesendet werden, da der Empfänger bisher noch keine Transaktion gemacht hat und deswegen der öffentliche Schlüssel des Empfängers unbekannt ist.",
-            305: "Der NEM Infrastructure Server ist nicht verfügbar.",
+            202: "Die verschlüsselte Nachricht kann nicht gesendet werden, da der Empfänger bisher noch keine Transaktion gesendet hat und deswegen der öffentliche Schlüssel des Empfängers unbekannt ist.",
+            305: "Der NEM Infrastructure Server (NIS) ist nicht verfügbar.",
             306: "Es ist ein Fehler aufgetreten, den das Entwicklerteam nicht vorhergesehen hat. Wir entschuldigen uns hierfür, vielleicht hilft ein Neustart. Falls nicht, eröffne bitte einen Thread in der NEM NIS/NCC Community.",
             400: "Einer der Parameter fehlt oder ist ungültig.",
-            401: "Dieser Vorgang kann nicht durchgeführt werden da der private Schlüssel gestohlen werden könnte wenn er an das remote NIS gesendet wird.",
+            401: "Dieser Vorgang kann nicht durchgeführt werden, da der private Schlüssel gestohlen werden könnte, wenn er an das remote NIS gesendet wird.",
             404: "Die angeforderte Ressource wurde nicht gefunden.",
-            500: "Es ist ein Fehler aufgetreten, den das Entwicklerteam nicht vorhergesehen hat. Wir entschuldigen uns hierfür, vielleicht hilft ein Neustart. Falls nicht, eröffne bitte einen Thread in der NEM NIS/NCC Community.",
-            600: "Der NIS Server muss gebooted sein, damit NCC Transaktionen senden und empfangen kann. Bitte boote Deinen lokalen Knotenpunkt mit Hilfe des NCC Boot-Menüpunkts.",
-            601: "Der NIS Knotenpunkt ist bereits gebooted. Es ist nicht nötig, NIS ein weiteres Mal zu booten.",
-            700: "Das angegebene Konto erfüllt nicht die Grundkriterien, um Blöcke zu erzeugen. Um Blöcke erzeugen zu können, braucht man mindestens 1.000 NEMs auf dem Konto.",
+            500: "Es ist ein Fehler aufgetreten, den das Entwicklerteam nicht vorhergesehen hat. Vielleicht hilft ein Neustart. Falls nicht, eröffne bitte einen Thread in der NEM NIS/NCC Community.",
+            600: "Der NEM Infrastructure Server (NIS) muss gebootet sein, damit Transaktionen gesendet und empfangen werden können. Bitte boote Deinen lokalen Knotenpunkt mit Hilfe des NCC Boot-Menüpunkts.",
+            601: "Der NIS Knotenpunkt ist bereits gebootet. Es ist nicht nötig, NIS ein weiteres Mal zu booten.",
+            700: "Das angegebene Konto erfüllt nicht die Grundkriterien, um Blöcke zu erzeugen. Um Blöcke erzeugen zu können, wird ein Kontostand von mindestens 1.000 NEM benötigt.",
             701: "Das angegebene Verfallsdatum liegt in der Vergangenheit. Das Verfallsdatum muss in einem Zeitraum von einem Tag liegen.",
             702: "Das angegebene Verfallsdatum liegt zu weit in der Zukunft. Das Verfallsdatum muss in einem Zeitraum von einem Tag liegen.",
-            703: "Dein Kontoguthaben reicht nicht aus, um den angegebenen Betrag an NEMs zu senden.",
-            704: "Der angegebene Nachrichtentext ist zu lang, um ihn zu versenden. Bitte reduziere die Länge der Nachricht, um sie versenden zu können.",
+            703: "Dein Kontoguthaben reicht nicht aus, um den angegebenen Betrag zu senden.",
+            704: "Der angegebene Nachrichtentext ist zu lang. Bitte reduziere die Länge der Nachricht, um sie versenden zu können.",
             705: "Der Transaktionshash existiert bereits in der Datenbank oder in der Liste der unbestätigten Transaktionen.",
             706: "Die Signatur der Transaktion konnte nicht verifiziert werden.",
             707: "Der Zeitstempel der Transaktion liegt zu weit in der Vergangenheit.",
             708: "Der Zeitstempel der Transaktion liegt zu weit in der Zukunft.",
             709: "Das Konto ist unbekannt. Ein Konto muss mindestens einmal als Sender oder Empfänger in einer Transaktion auftreten, um dem Netzwerk bekannt zu sein.",
-            901: "Es ist ein Fehler beim Übergang zum Offlinemodus aufgetreten.",
-            1000: "Der Private und öffentliche Schlüssel den Du eingegeben hast passen nicht zusammen.",
-            1001: "Der öffentliche Schlüssel und die Adresse die Du eingegeben hast passen nicht zusammen.",
+            901: "Es ist ein Fehler beim Übergang in den Offlinemodus aufgetreten.",
+            1000: "Der private und öffentliche Schlüssel den Du eingegeben hast, passen nicht zusammen.",
+            1001: "Der öffentliche Schlüssel und die Adresse, die Du eingegeben hast, passen nicht zusammen.",
             1002: "Die Adresse gehört nicht zum Hauptnetzwerk."
         },
         common: {
             success: "Erfolg",
             appStatus: {
-                nccUnknown: "NCC status ist unbekannt",
+                nccUnknown: "NCC Status ist unbekannt",
                 nccUnavailable: "NCC is nicht verfügbar",
-                nccStarting: "NCC started...",
-                nisUnknown: "NIS status ist unbekannt",
-                nisUnavailable: "NIS is nicht verfügbar",
-                nisStarting: "NIS started...",
-                notBooted: "NIS muss gebootet werden. Bitte öffne eine Brieftasche und boote den lokalen Knotenpunkt mit Hilfe des Popup-Dialoges.",
+                nccStarting: "NCC wird gestartet...",
+                nisUnknown: "NIS Status ist unbekannt",
+                nisUnavailable: "NIS ist nicht verfügbar",
+                nisStarting: "NIS wird gestartet...",
+                notBooted: "NIS muss gebootet werden. Bitte öffne eine Brieftasche und boote den lokalen Knotenpunkt mit Hilfe des NCC Boot-Menüpunkts.",
                 booting: "NIS wird gebootet...",
-                nisInfoNotAvailable: "NIS status wird abgefragt...",
-                synchronizing: "NIS synchronisiert. Block {{1}}, {{2}} im Rückstand.",
+                nisInfoNotAvailable: "NIS Status wird abgefragt...",
+                synchronizing: "NIS wird synchronisiert. Block {{1}}, {{2}} im Rückstand.",
                 daysBehind: {
                     0: "weniger als 1 Tag",
                     1: "etwa 1 Tag",
                     many: "etwa {{1}} Tage"
                 },
-                synchronized: "NIS ist synchronisiert!"
+                synchronized: "NIS ist synchron!"
             }
         },
         modals: {
             error: {
-                title: "Oops!",
+                title: "Entschuldigung!",
                 caption: "FEHLER {{1}}"
             },
             confirmDefault: {
@@ -97,7 +97,7 @@ define({
             sendNem: {
                 title: "NEM senden",
                 labelDesc: "Das Label des Kontos ist {{1}}",
-                nullLabelDesc: "Dieses Konto hat keinen Label",
+                nullLabelDesc: "Dieses Konto hat kein Label",
                 amount: "Betrag",
                 recipient: "Konto des Empfängers",
                 message: "Nachricht",
@@ -123,14 +123,14 @@ define({
                 }
             },
             clientInfo: {
-                title: "Client info",
+                title: "Client Information",
                 ncc: "NEM Community Client - NCC",
                 signer: "Unterzeichner",
                 remoteServer: "Remote Server",
                 local: "Lokal",
                 nis: "NEM Infrastructure Server - NIS",
-                sync: "Synchronisiert",
-                notSync: "Nicht synchronisiert",
+                sync: "Synchron",
+                notSync: "Nicht synchron",
                 notConnected: "Nicht verbunden mit der NEM Cloud",
                 loading: "Lade..."
             },
@@ -140,7 +140,7 @@ define({
                 hash: "Hash",
                 type: "Transaktionstyp",
                 pending: "Unbestätigt",
-                outgoing: "Abgehend",
+                outgoing: "Ausgehend",
                 incoming: "Eingehend",
                 self: "Selbst",
                 sender: "Sender",
@@ -159,11 +159,11 @@ define({
                 noLabel: "<span class=\"null\"><Kein label></span>",
                 wallet: "Brieftasche",
                 node: "Name des Knotenpunkts",
-                boot: "Boot",
-                booting: "Booting..."
+                boot: "Jetzt booten",
+                booting: "Wird gebootet..."
             },
             notBootedWarning: {
-                title: "Der Knotenpunkt wurde noch nicht gebooted!",
+                title: "Der Knotenpunkt wurde noch nicht gebootet!",
                 message: "Der lokale Knotenpunkt muss gebootet werden, bevor Du NEM senden kannst!"
             },
             closeWallet: {
@@ -172,7 +172,7 @@ define({
             },
             createAccount: {
                 title: "Neues Konto anlegen",
-                label: "Privater Label",
+                label: "Privates Label",
                 wallet: "Brieftasche",
                 password: "Passwort der Brieftasche",
                 successMessage: "Das Konto {{1}} {{#2}}({{2}}){{/2}} wurde angelegt!",
@@ -180,24 +180,24 @@ define({
             },
             createRealAccountData: {
                 title: "Daten für ein echtes Konto erzeugen",
-                message: "Die nachstehend angezeigten Daten sind für ein echtes Konto nach dem offiziellen Start von NEM. Bitte speichere den privaten Schlüssel, den öffentlichen Schlüssel und die Adresse an einem sicheren Ort. Wenn Du den privaten Schlüssel verlierst sind Deine Kontodaten und damit all Deine NEM für IMMER verloren.",
+                message: "Die nachstehend angezeigten Daten sind für ein echtes Konto nach dem offiziellen Start von NEM. Bitte speichere den privaten Schlüssel, den öffentlichen Schlüssel und die Adresse an einem sicheren Ort. Wenn Du den privaten Schlüssel verlierst, sind Deine Kontodaten und damit all Deine NEM für IMMER verloren.",
                 address: "Adresse",
                 publicKey: "Öffentlicher Schlüssel",
                 privateKey: "Privater Schlüssel",
                 confirm: {
                     title: "Sicherung des privaten Schlüssels",
-                    message: "Bist Du sicher, dass Du den privaten Schlüssel an einem sicheren Ort gespeichert hast."
+                    message: "Bist Du sicher, dass Du den privaten Schlüssel an einem sicheren Ort gespeichert hast?"
                 },
                 recheck: {
                     title: "Überprüfung des privaten Schlüssels",
-                    message: "Bitte gebe den privaten Schlüssel erneut ein um zu überprüfen ob er korrekt ist. Wenn Du vergessen hast den Schlüsel zu speichern musst Du einen neuen erzeugen.",
+                    message: "Bitte gebe den privaten Schlüssel erneut ein, um zu prüfen, ob er korrekt ist. Wenn Du vergessen hast, den Schlüsel zu speichern, musst Du einen Neuen erzeugen.",
                     correct: {
                         title: "Sehr gut!",
                         message: "Du hast den richtigen Schlüssel gespeichert. Bewahre ihn an einem sicheren Ort auf!"
                     },
                     incorrect: {
-                        title: "Hmmm...",
-                        message: "Der private Schlüssel den Du eingegeben hast ist nicht korrekt. Bitte gebe ihn erneut ein.",
+                        title: "Fehler!",
+                        message: "Der private Schlüssel, den Du eingegeben hast, ist nicht korrekt. Bitte gebe ihn erneut ein.",
                         tryAgain: "Bitte erneut eingeben.",
                         seeOriginal: "Originaldaten anschauen."
                     },
@@ -207,11 +207,11 @@ define({
             },
             verifyRealAccountData: {
                 title: "Reale Kontodaten verifizieren.",
-                message: "Bitte gebe die gespeicherte Addresse, den öffentlichen und privaten Schlüssel ein um zu überprüfen ob sie zusammen passen.",
+                message: "Bitte gebe die gespeicherte Addresse, den öffentlichen und den privaten Schlüssel ein, um zu prüfen, ob sie zusammen passen.",
                 address: "Adresse",
                 publicKey: "Öffentlicher Schlüssel",
                 privateKey: "Privater Schlüssel",
-                dataMatched: "Es ist alles in Ordnung, die Addresse, der öffentliche und private Schlüssel passen zusammen.",
+                dataMatched: "Es ist alles in Ordnung! Die Addresse, der öffentliche und der private Schlüssel passen zusammen.",
                 verify: "Überprüfen"
             },
             addAccount: {
@@ -233,7 +233,7 @@ define({
                 set: "Als Hauptkonto festlegen"
             },
             changeWalletName: {
-                title: "Namen der Brieftasche ändern",
+                title: "Name der Brieftasche ändern",
                 wallet: "Derzeitiger Name der Brieftasche",
                 newName: "Neuer Name der Brieftasche",
                 password: "Passwort der Brieftasche",
@@ -248,7 +248,7 @@ define({
                 confirmPassword: "Neues Passwort bestätigen",
                 successMessage: "Das Passwort der Brieftasche wurde erfolgreich geändert",
                 change: "Ändern",
-                passwordNotMatchTitle: "Oops!",
+                passwordNotMatchTitle: "Fehler!",
                 passwordNotMatchMessage: "Passwort und Passwortbestätigung sind verschieden. Bitte gib das neue Passwort beide Male richtig ein."
             },
             changeAccountLabel: {
@@ -263,7 +263,7 @@ define({
                 title: "Konto entfernen",
                 wallet: "Name der Brieftasche",
                 password: "Passwort der Brieftasche",
-                warning: "Stelle bitte sicher, dass auf Deinem Konto keine NEMs sind, bevor Du das Konto entfernst, da diese verloren gehen.",
+                warning: "Stelle bitte sicher, dass auf Deinem Konto keine NEM sind, bevor Du das Konto entfernst, da diese verloren gehen.",
                 successMessage: "Das Konto {{1}} {{#2}}({{2}}){{/2}} wurde entfernt!",
                 remove: "Entfernen"
             },
@@ -321,9 +321,9 @@ define({
                 passwordPlh: "Passwort",
                 create: "Anlegen",
                 rightTitle: "Bist Du schon ein <em>NEM</em>ber?",
-                rightButton: "Öffne Deine Brieftasche",
+                rightButton: "Brieftasche öffnen",
                 openButton: "Öffnen",
-                walletsFound: "<strong>{{1}}</strong> <em>Brieftaschen</em> wurden gefunden",
+                walletsFound: "<strong>{{1}}</strong> <em>Brieftasche(n)</em> gefunden",
                 copyright: "Photografie von <em>Cas Cornelissen</em>"
             },
             carousel: {
@@ -343,7 +343,7 @@ define({
                     {
                         title: "Wie funktioniert NCC?",
                         paragraphs: [
-                            "<strong>NCC</strong> ermöglicht Dir den Zugriff auf Anlagen und NEMs genauso wie eine herkömmliche Brieftasche. Du kannst",
+                            "<strong>NCC</strong> ermöglicht Dir den Zugriff auf Anlagen und NEM genauso wie eine herkömmliche Brieftasche. Du kannst",
                             "<strong>NCC</strong> braucht Zugang zu einem <strong>NIS</strong> Server, um zu funktionieren. Normalerweise wird der Server lokal betrieben (wird zusammen mit dem <strong>NCC</strong> installiert)",
                             "Du kannst auch den Zugang zu einem remote <strong>NIS</strong> konfigurieren."
                         ],
@@ -356,7 +356,7 @@ define({
                         title: "Was ist &#42;NIS?",
                         paragraphs: [
                             "Diese Komponente ist dafür zuständig, die <strong>NEM</strong> Cloud am Leben zu halten.",
-                            "Je mehr <strong>NIS</strong> Server, desto besser die Sicherheit.",
+                            "Je mehr <strong>NIS</strong> Server betrieben werden, desto höher ist die Sicherheit.",
                             "<strong>NIS</strong> ist der Zugangspunkt zur <strong>NEM</strong> Cloud."
                         ],
                         legend: "<strong>&#42;NIS</strong> steht für <strong>NEM Infrastructure Server</strong>"
@@ -379,7 +379,7 @@ define({
             actions: {
                 refreshInfo: "Info aktualisieren",
                 bootLocalNode: "Lokalen Knotenpunkt booten",
-                changeWalletName: "Namen der Brieftasche ändern",
+                changeWalletName: "Name der Brieftasche ändern",
                 changeWalletPassword: "Passwort der Brieftasche ändern",
                 mergeWallets: "Brieftaschen zusammenführen",
                 exportWallet: "Brieftasche exportieren",
@@ -390,7 +390,7 @@ define({
                 changeAccountLabel: "Label des Kontos ändern",
                 setPrimary: "Hauptkonto festlegen",
                 removeAccount: "Konto entfernen",
-                clientInfo: "Client Info",
+                clientInfo: "Client Information",
                 closeWallet: "Brieftasche schließen",
                 closeProgram: "Programm beenden",
                 copyClipboard: "Addresse in die Zwischenablage kopieren"
@@ -408,7 +408,7 @@ define({
                 "Einstellungen",
                 "Programm beenden"
             ],
-            bootNodeWarning: "Der lokaler Knotenpunkt muss gebootet werden, bevor Du alle NCC Features verwenden kannst."
+            bootNodeWarning: "Der lokale Knotenpunkt muss gebootet werden, bevor Du alle Funktionen verwenden kannst."
         },
         dashboard: {
             assets: {
@@ -451,7 +451,7 @@ define({
                 ],
                 types: {
                     pending: "Unbestätigte Transaktion",
-                    outgoing: "Abgehende Transaktion",
+                    outgoing: "Ausgehende Transaktion",
                     incoming: "Eingehende Transaktion",
                     self: "Transaktion zu sich selbst"
                 },
@@ -471,7 +471,7 @@ define({
             news: {
                 titleTooltip: "Neuigkeiten"
             },
-            notAvailable: "Noch nicht verfügbar im Alpha Release"
+            notAvailable: "Noch nicht verfügbar im Beta Release"
         },
         transactions: {
             title: "Transaktionen",
@@ -481,7 +481,7 @@ define({
                 confirmed: "Bestätigt",
                 unconfirmed: "Unbestätigt",
                 incoming: "Eingehend",
-                outgoing: "Abgehend"
+                outgoing: "Ausgehend"
             },
             table: {
                 columns: [
@@ -497,7 +497,7 @@ define({
                 ],
                 types: {
                     pending: "Unbestätigte Transaktion",
-                    outgoing: "Abgehende Transaktion",
+                    outgoing: "Ausgehende Transaktion",
                     incoming: "Eingehende Transaktion",
                     self: "Transaktion zu sich selbst"
                 },
