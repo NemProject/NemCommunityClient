@@ -51,7 +51,7 @@ define({
         		nisStarting: 'NIS is starting...',
         		notBooted: 'NIS requires to be booted. Please open your wallet and boot a local node via the popup dialog or configure the auto-boot setting.',
         		booting: 'Booting NIS...',
-        		nisInfoNotAvailable: 'NIS info is not avaiable yet. Trying to retrieve NIS info...',
+        		nisInfoNotAvailable: 'NIS info is not available yet. Trying to retrieve NIS info...',
         		synchronizing: 'NIS is synchronizing. At block {{1}}, est. {{2}} behind.',
         		daysBehind: {
         			0: 'less than 1 day',
@@ -310,7 +310,7 @@ define({
 		},
 		landing: {
 			logo: 'images/nem_logo.png',
-			importSuccess: 'Wallet has been sucessfully imported!',
+			importSuccess: 'Wallet has been successfully imported!',
 			nav: {
 				start: 'Getting Started',
 				about: 'About NEM',
@@ -323,9 +323,9 @@ define({
 				passwordPlh: 'Password',
 				create: 'Create',
 				rightTitle: 'Already a <em>NEM</em>ber?',
-				rightButton: 'Open your wallet',
+				rightButton: 'Open wallet',
 				openButton: 'Open',
-				walletsFound: 'Found <strong>{{1}}</strong> <em>wallets</em>',
+				walletsFound: '<strong>{{1}}</strong> <em>wallet(s)</em> found',
 				copyright: 'Photography by <em>Cas Cornelissen</em>'
 			},
 			carousel: {
@@ -343,7 +343,7 @@ define({
 			about: {
 				sections: [
 					{
-						title: 'How NCC works?',
+						title: 'What is NCC?',
 						paragraphs: [
 							'<strong>NCC</strong> provides an access to your assets and NEMs like a traditional wallet does. You may',
 							'<strong>NCC</strong> requires access to an <strong>NIS</strong> server in order to operate. Standard is to have a local server active (is installed together with the <strong>NCC</strong>)',
