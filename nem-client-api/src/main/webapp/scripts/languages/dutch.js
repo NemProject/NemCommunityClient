@@ -19,8 +19,8 @@ define({
 			202: 'Een beveiligd bericht kan niet worden verstuurd naar de ontvanger omdat hij of zij nog nooit een transactie heeft gemaakt met dit rekeningnummer.',
 			305: 'NEM Infrastructure Server is niet beschikbaar.',
 			306: 'Een fout is opgetreden wat het ontwikkelteam niet heeft voorzien. Onze verontschuldiging hiervoor, misschien helpt het om nog een keer te proberen. Als dat ook niet lukt is het wijs om een ticket te openen binnen de NEM NIS/NCC community.',
-			400: 'Een parameten is missend of niet goed.',
-			401: 'This operation cannot be completed because it might leak a private key by sending it to a remote NIS.',
+			400: 'Een parameter is missend of niet goed.',
+			401: 'Deze actie is niet toegestaan, omdat er een privé sleutel naar een remote NIS kan worden verstuurd.',
 			404: 'De opgevraagde bron kom niet worden gevonden..',
 			500: 'Een fout is opgetreden wat het ontwikkelteam niet heeft voorzien. Onze verontschuldiging hiervoor, misschien helpt het om nog een keer te proberen. Als dat ook niet lukt is het wijs om een ticket te openen binnen de NEM NIS/NCC community.',
 			600: 'Voor de NCC (Nem Community Client) is het vereist om de NIS (Network Infrastructure Server) het starten voor het verzenden en ontvangen van transacties van de NEM cloud. Gebruik de NCC menu optie om lokaal te starten.',
@@ -36,9 +36,9 @@ define({
 			708: 'De timestamp van de transactie ligt te ver in de toekomst.',
 			709: 'Het rekeningnummer is onbekend.  Een rekening wordt pas bekend op het netwerk als deze deel heeft uitgemaakt van een transactie als verzender of ontvanger.',
 			901: 'Er is een fout opgetreden bij het instellen van de offline modus.',
-			1000: "The private key and the public key you have provided mismatch.",
-			1001: 'The public key and the address you have provided mismatch.',
-			1002: 'The address does not belong to the main network.'
+			1000: "The privé sleutel en publieke sleutel komen niet overeen.",
+			1001: 'The publieke sleutel en het adres komen niet overeen.',
+			1002: 'Het adres klopt niet en hoort niet bij het netwerk.'
 		},
 		common: {
 			success: 'Gelukt!', //title of the Success message modals
@@ -100,41 +100,41 @@ define({
 				nullLabelDesc: "Deze rekening heeft geen label",
 				amount: 'Bedrag',
 				recipient: "Rekening van ontvanger",
-				recipientValidation: 'Account addresses must be 40 character long excluding dashes',
+				recipientValidation: 'Rekeningen moeten een lengte hebben van 40 karakters en dashes',
 				message: 'Bericht',
 				encrypt: 'Beveilig bericht',
 				fee: 'Toeslag',
-				feeValidation: 'Fee must not be less than the minimum fee',
+				feeValidation: 'Toeslag mag niet lager zijn dan het minimum',
 				dueBy: 'Overmaken voor',
-				useMinimumFee: 'Use minimum fee',
+				useMinimumFee: 'Gebruik minimale toeslag',
 				hours: 'Uur',
 				password: 'Wachtwoord',
 				send: 'Verstuur',
-				cancel: 'Cancel',
+				cancel: 'Afbreken',
 				sending: 'Versturen...',
 				successMessage: 'Transactie is verzonden!',
 				txConfirm: {
-					title: 'Confirm Transaction',
-					amount: 'Amount',
-					to: 'To',
-					fee: 'Fee',
-					dueBy: 'Due by',
-					hours: 'hour(s)',
-					total: 'Total',
-					message: 'Message',
-					encrypted: 'Message is encrypted',
-					noMessage: 'No message',
-					cancel: 'Cancel',
-					confirm: 'Confirm',
-					sending: 'Sending...'
+					title: 'Bevestig transactie',
+					amount: 'Hoeveelheid',
+					to: 'Naar',
+					fee: 'Toeslag',
+					dueBy: 'Verzenden voor',
+					hours: 'uur',
+					total: 'Totaal',
+					message: 'Bericht',
+					encrypted: 'Bericht is geencrypt',
+					noMessage: 'Geen bericht',
+					cancel: 'Annuleer',
+					confirm: 'Bevestig',
+					sending: 'Verzenden...'
 				},
 				notBootedWarning: {
 					title: 'Node is niet gestart!',
-					message: 'Een loake node moet eerst gestart worden om NEM te versturen!'
+					message: 'Een lokale node moet eerst gestart worden om NEM te versturen!'
 				},
 				bootingWarning: {
-					title: 'Node is being booted',
-					message: 'Please wait until booting process is done to send your transaction.'
+					title: 'Node wordt opgestart',
+					message: 'Even wachten a.u.b. tot het opstartproces klaar is om je transactie te verzenden.'
 				}
 			},
 			clientInfo: {
@@ -165,7 +165,7 @@ define({
 				encrypted: 'Bericht is beveiligd',
 				time: 'Timestamp',
 				confirmations: 'Confirmaties',
-				confirmationsUnknown: 'Unknown',
+				confirmationsUnknown: 'Onbekend',
 				amount: 'Bedrag',
 				fee: 'Toeslag'
 			},
@@ -318,7 +318,7 @@ define({
 				stop: 'Stop'
 			},
 			logoutWarning: {
-				leavePage: "You're leaving your wallet. Remember that if you leave your wallet this way, some others may still be able to access your wallet from this computer.\n\nTo prevent that from happening, please log out using the \"Close wallet\" menu item in the top-right dropdown menu before you close the browser tab or navigate away.",
+				leavePage: "Je gaat de wallet verlaten. Onthoud dat op deze manier andere gebruikers op deze computer hier toegang toe kunnen krijgen.\n\nLog uit met het \"Sluit Wallet\" menu item in het dropdown menu rechts-boven voordat je de browser sluit of naar een andere pagina navigeert.",
 			}
 		},
 		landing: {
@@ -467,7 +467,7 @@ define({
 				noMessage: 'Geen bericht',
 				encrypted: 'Bericht is beveiligd',
 				view: 'Bekijk',
-				confirmationsUnknown: 'Unknown',
+				confirmationsUnknown: 'Onbekend',
 				pending: 'Wachtend',
 				seeAll: 'Bekijk alle transacties',
 				noTransactions: 'Nog geen transacties zijn uitgevoerd'
@@ -481,7 +481,7 @@ define({
 			news: {
 				titleTooltip: 'Nieuws'
 			},
-			notAvailable: 'Nog niet beschikbaar in de alpha release'
+			notAvailable: 'Nog niet beschikbaar in deze release'
 		},
 		transactions: {
 			title: 'Transacties',
@@ -512,9 +512,9 @@ define({
 					self: 'Eigen transactie',
 				},
 				noMessage: 'Geen bericht',
-				encrypted: 'Bericht is beveiligd',
+				encrypted: 'Bericht is versleuteld',
 				view: 'Bekijk',
-				confirmationsUnknown: 'Unknown',
+				confirmationsUnknown: 'Onbekend',
 				pending: 'Wachtend',
 				noTransactions: 'Nog geen transacties zijn uitgevoerd',
 				loading: 'Meer transacties laden...'
