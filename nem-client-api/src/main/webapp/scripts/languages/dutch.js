@@ -109,6 +109,7 @@ define({
 				useMinimumFee: 'Gebruik minimale toeslag',
 				hours: 'Uur',
 				password: 'Wachtwoord',
+				passwordValidation: 'Password must not be blank',
 				send: 'Verstuur',
 				cancel: 'Afbreken',
 				sending: 'Versturen...',

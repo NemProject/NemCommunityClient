@@ -109,6 +109,7 @@ define({
 				useMinimumFee: 'Use minimum fee',
 				hours: "hours",
 				password: "Coffer's pick",
+				passwordValidation: 'Password must not be blank',
 				send: "Deliver",
 				cancel: 'Cancel',
 				sending: "Delivering...",

@@ -109,6 +109,7 @@ define({
 				useMinimumFee: 'Usar taxa minima',
 				hours: "horas",
 				password: "Senha",
+				passwordValidation: 'Password must not be blank',
 				send: "Enviar",
 				cancel: 'Cancelar',
 				sending: "Enviando...",

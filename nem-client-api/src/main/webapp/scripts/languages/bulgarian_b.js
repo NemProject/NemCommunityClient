@@ -109,6 +109,7 @@ define({
 				useMinimumFee: "Ползвай минималната такса",
 				hours: "Часове",
 				password: "Парола",
+				passwordValidation: 'Password must not be blank',
 				send: "Изпрати",
 				cancel: "Отказ",
 				sending: "Изпращам...",

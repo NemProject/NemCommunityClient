@@ -47,8 +47,14 @@ define(['NccModal', 'Utils'], function(NccModal, Utils) {
             formattedMinimumFee: function() {
                 return Utils.formatCurrency(this.get('minimumFee'), false, true, true);
             },
+            passwordValid: function() {
+                return !!this.get('password');
+            },
+            passwordError: function() {
+                return !this.get('passwordValid') && this.get('passwordChanged');
+            },
             formValid: function() {
-                return this.get('recipientValid') && this.get('feeValid');
+                return this.get('recipientValid') && this.get('feeValid') && this.get('passwordValid');
             }
         },
         /**
@@ -98,6 +104,7 @@ define(['NccModal', 'Utils'], function(NccModal, Utils) {
 
             this.set('recipientChanged', false);
             this.set('feeChanged', false);
+            this.set('passwordChanged', false);
         },
         sendTransaction: function() {
             var requestData = {
@@ -181,6 +188,9 @@ define(['NccModal', 'Utils'], function(NccModal, Utils) {
                 })(),
                 fee: function() {
                     this.set('feeChanged', true);
+                },
+                password: function() {
+                    this.set('passwordChanged', true);
                 }
             }, 
             {

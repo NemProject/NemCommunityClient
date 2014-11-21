@@ -109,6 +109,7 @@
 				useMinimumFee: 'Use minimum fee',
 				hours: 'घंटे',
 				password: 'पासवर्ड',
+				passwordValidation: 'Password must not be blank',
 				send: 'भेजें',
 				cancel: 'Cancel',
 				sending: 'भेजा जा रहा है...',

@@ -109,6 +109,7 @@ define({
 				useMinimumFee: "Benutze minimale Gebühr",
 				hours: "Stunden",
 				password: "Passwort",
+				passwordValidation: 'Password must not be blank',
 				send: "Senden",
 				cancel: "Abbrechen",
 				sending: "Sende...",

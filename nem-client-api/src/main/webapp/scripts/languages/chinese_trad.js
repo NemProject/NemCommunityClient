@@ -109,6 +109,7 @@ define({
 				useMinimumFee: 'Use minimum fee',
 				hours: 'hours',
 				password: '密碼',
+				passwordValidation: 'Password must not be blank',
 				send: '發送',
 				cancel: 'Cancel',
 				sending: '發送...',

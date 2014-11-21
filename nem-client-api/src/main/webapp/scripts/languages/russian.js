@@ -109,6 +109,7 @@
 				useMinimumFee: 'Use minimum fee',
 				hours: 'часов',
 				password: 'Пароль',
+				passwordValidation: 'Password must not be blank',
 				send: 'Послать',
 				cancel: 'Cancel',
 				sending: 'Посылается...',

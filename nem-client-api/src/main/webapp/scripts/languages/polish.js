@@ -109,6 +109,7 @@ define({
 				useMinimumFee: 'Użyj minimalnej opłaty',
 				hours: 'godzin',
 				password: 'Hasło',
+				passwordValidation: 'Password must not be blank',
 				send: 'Wyślij',
 				cancel: 'Anuluj',
 				sending: 'Wysyłanie...',

@@ -109,6 +109,7 @@ define({
 				useMinimumFee: 'Use minimum fee',
 				hours: "sati",
 				password: "Lozinka",
+				passwordValidation: 'Password must not be blank',
 				send: "Šalji",
 				cancel: 'Cancel',
 				sending: "Slanje...",

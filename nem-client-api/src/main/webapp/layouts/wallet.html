@@ -286,7 +286,12 @@
 			</div>
 		</div>
 		<div class="form-field">
-			<p class="form-label">{{texts.modals.sendNem.password}}</p>
+			<p class="form-label">
+				{{texts.modals.sendNem.password}}
+				{{#if passwordError}}
+					<span class="sendNem-errorIcon icon-exclamation" title="{{texts.modals.sendNem.passwordValidation}}" on-mouseover="registerToolTip"></span>
+				{{/if}}
+			</p>
 			<input type="password" class="form-input form-input--textbox" value="{{password}}" on-keypress="sendFormKeypress" />
 		</div>
 	</div>

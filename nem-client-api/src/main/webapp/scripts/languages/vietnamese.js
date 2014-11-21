@@ -109,6 +109,7 @@ define({
 				useMinimumFee: 'Sử dụng phí tối thiểu',
 				hours: 'giờ',
 				password: 'Mật khẩu',
+				passwordValidation: 'Mật khẩu không được để trống',
 				send: 'Gửi',
 				cancel: 'Huỷ',
 				sending: 'Đang gửi...',
