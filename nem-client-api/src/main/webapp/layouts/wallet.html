@@ -382,10 +382,14 @@
 			<tr>
 				<td class="txDetails-cell--label">{{texts.modals.transactionDetails.confirmations}}</td>
 				<td class="txDetails-cell--content">
-					{{#if blockchainHeight}}
-						{{blockchainHeight - .blockHeight}}
+					{{#if .confirmed}}
+						{{#if blockchainHeight}}
+							{{blockchainHeight - .blockHeight}}
+						{{else}}
+							{{texts.modals.transactionDetails.confirmationsUnknown}}
+						{{/if}}
 					{{else}}
-						{{texts.modals.transactionDetails.confirmationsUnknown}}
+						{{texts.modals.transactionDetails.pending}}
 					{{/if}}
 				</td>
 			</tr>
