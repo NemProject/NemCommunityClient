@@ -6,7 +6,7 @@
 				<button type="button" class="transactionsPage-sendNemButton icon-paper-plane" disabled="{{nisUnavailable}}" on-click="openSendNem">{{texts.transactions.sendNem}}</button>
 				<div class="recordList-overview">
 					<p class="recordList-overview-title">{{texts.transactions.balance}}</p>
-					<p><span title="{{Math.floor(activeAccount.balance / 1000000)}} NEM {{activeAccount.balance % 1000000}} mNEM" on-mouseover="registerToolTip">{{{formatCurrency(activeAccount.balance, false)}}} <span class="unit">NEM</span></span></p>
+					<p><span title="{{Math.floor(activeAccount.balance / 1000000)}} NEM {{activeAccount.balance % 1000000}} µNEM" on-mouseover="registerToolTip">{{{formatCurrency(activeAccount.balance, false)}}} <span class="unit">NEM</span></span></p>
 				</div>
 			</div>
 			<div class="recordList-body">

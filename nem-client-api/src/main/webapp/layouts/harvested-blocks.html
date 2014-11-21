@@ -33,7 +33,7 @@
 					<p class="recordList-overview-title">{{texts.harvestedBlocks.feeEarned}}</p>
 					<p>
 						{{#if typeof harvestedBlocks.feeEarned === 'number'}}
-							<span title="{{Math.floor(harvestedBlocks.feeEarned / 1000000)}} NEM {{harvestedBlocks.feeEarned % 1000000}} mNEM" on-mouseover="registerToolTip">{{{formatCurrency(harvestedBlocks.feeEarned, false, false, false)}}} <span class="unit">NEM</span></span>
+							<span title="{{Math.floor(harvestedBlocks.feeEarned / 1000000)}} NEM {{harvestedBlocks.feeEarned % 1000000}} µNEM" on-mouseover="registerToolTip">{{{formatCurrency(harvestedBlocks.feeEarned, false, false, false)}}} <span class="unit">NEM</span></span>
 						{{else}}
 							{{texts.harvestedBlocks.unknown}}
 						{{/if}}
