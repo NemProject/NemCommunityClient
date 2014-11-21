@@ -523,6 +523,7 @@ define({
 		harvestedBlocks: {
 			title: "Генерирани блокове",
 			feeEarned: "Такси събрани от последните 25 генерирани блока",
+			unknown: 'Unknown',
 			table: {
 				columns: [
 					"Височина",

@@ -523,6 +523,7 @@ define({
 		harvestedBlocks: {
 			title: "Blocchi generati",
 			feeEarned: "Commissioni guadagnate nella generazione degli ultimi 25 blocchi",
+			unknown: 'Unknown',
 			table: {
 				columns: [
 					"Numero",

@@ -523,6 +523,7 @@ define({
 		harvestedBlocks: {
 			title: 'Zebrane bloki',
 			feeEarned: 'Opłaty otrzymane z ostatnich 25 zebranych bloków',
+			unknown: 'Unknown',
 			table: {
 				columns: [
 					'Wysokość',

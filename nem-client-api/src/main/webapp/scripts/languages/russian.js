@@ -523,6 +523,7 @@
 		harvestedBlocks: {
 			title: 'Сгенерированные Блоки',
 			feeEarned: 'Вознаграждение за последние 25 сгенерированных блоков',
+			unknown: 'Unknown',
 			table: {
 				columns: [
 					'Блок',

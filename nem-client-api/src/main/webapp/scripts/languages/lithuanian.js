@@ -523,6 +523,7 @@ define({
 		harvestedBlocks: {
 			title: "Iškasti blokai",
 			feeEarned: "Iš paskutinių 25 \"iškastų\" blokų gauti mokesciai",
+			unknown: 'Unknown',
 			table: {
 				columns: [
 					"Bloko numeris",

@@ -523,6 +523,7 @@ define({
 		harvestedBlocks: {
 			title: 'Các block thu hoạch được',
 			feeEarned: 'Phí giao dịch kiếm được từ 25 block mới nhất',
+			unknown: 'Không rõ',
 			table: {
 				columns: [
 					'Chiều cao',

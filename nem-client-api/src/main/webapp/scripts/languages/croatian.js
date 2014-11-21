@@ -523,6 +523,7 @@ define({
 		harvestedBlocks: {
 			title: "Ubrani blokovi",
 			feeEarned: "Zarađene naknade od zadnjih 25 ubranih blokova",
+			unknown: 'Unknown',
 			table: {
 				columns: [
 					"Visina",

@@ -523,6 +523,7 @@ define({
 		harvestedBlocks: {
 			title: 'Geharveste Blocks',
 			feeEarned: 'Toeslagen verdiend van de laatste 25 geharveste blocks',
+			unknown: 'Unknown',
 			table: {
 				columns: [
 					'Blockhoogte',

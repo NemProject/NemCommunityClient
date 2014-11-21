@@ -523,6 +523,7 @@
 		harvestedBlocks: {
 			title: 'हारवेस्टेड ब्लॉक्स',
 			feeEarned: 'पिछले 25 ब्लॉक्स के हारवेस्टेड फ़ीस',
+			unknown: 'Unknown',
 			table: {
 				columns: [
 					'Height',

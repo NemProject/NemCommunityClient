@@ -523,6 +523,7 @@ define({
 		harvestedBlocks: {
 			title: "Blocs récoltés",
 			feeEarned: "Honoraires perçus pour les 25 derniers blocs récoltés",
+			unknown: 'Unknown',
 			table: {
 				columns: [
 					"Hauteur",

@@ -523,6 +523,7 @@ define({
 		harvestedBlocks: {
 			title: "Geerntete Blöcke",
 			feeEarned: "Aus den letzten 25 geernteten Blöcken erhaltene Gebühren",
+			unknown: 'Unknown',
 			table: {
 				columns: [
 					"Block",

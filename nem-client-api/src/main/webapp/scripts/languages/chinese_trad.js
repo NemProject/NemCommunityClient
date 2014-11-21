@@ -523,6 +523,7 @@ define({
 		harvestedBlocks: {
 			title: '收獲廣塊',
 			feeEarned: '從上25塊收獲的報酬',
+			unknown: 'Unknown',
 			table: {
 				columns: [
 					'高',

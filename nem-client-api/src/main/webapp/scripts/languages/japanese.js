@@ -523,6 +523,7 @@ define({
 		harvestedBlocks: {
 			title: "ハーベストされたブロック",
 			feeEarned: "現在のブロックから25ブロック前から発生する収入",
+			unknown: 'Unknown',
 			table: {
 				columns: [
 					"ブロック番号",

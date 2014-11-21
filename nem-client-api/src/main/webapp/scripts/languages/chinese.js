@@ -523,6 +523,7 @@ define({
 		harvestedBlocks: {
 			title: '收获区块',
 			feeEarned: '最新挖出的25个区块的报酬',
+			unknown: 'Unknown',
 			table: {
 				columns: [
 					'高',

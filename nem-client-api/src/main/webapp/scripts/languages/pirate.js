@@ -523,6 +523,7 @@ define({
 		harvestedBlocks: {
 			title: "Plunderings",
 			feeEarned: "Bounties found in last 25 plunderings",
+			unknown: 'Unknown',
 			table: {
 				columns: [
 					"Height",

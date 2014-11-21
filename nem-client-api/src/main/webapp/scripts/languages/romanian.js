@@ -523,6 +523,7 @@ define({
 		harvestedBlocks: {
 			title: "Block-uri recoltate",
 			feeEarned: "Taxe câștigate din ultimele 25 de blockuri recoltate",
+			unknown: 'Unknown',
 			table: {
 				columns: [
 					"Block",

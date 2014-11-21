@@ -523,6 +523,7 @@ define({
 		harvestedBlocks: {
 			title: 'Сгенерованi блоки',
 			feeEarned: 'Комісійні, отримані за останні 25 сгенерованих блоків',
+			unknown: 'Unknown',
 			table: {
 				columns: [
 					'Порядковий номер',
