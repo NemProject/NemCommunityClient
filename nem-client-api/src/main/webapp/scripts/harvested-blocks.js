@@ -62,7 +62,12 @@
 	    			}
 
 	    			ncc.set('harvestedBlocks.feeEarned', sum);
-    			},
+    			}
+            }, {
+                init: false
+            }));
+            
+            local.listeners.push(ncc.observe({
     			'activeAccount.address': function() {
     				ncc.loadHarvestedBlocks('reload');
     			}

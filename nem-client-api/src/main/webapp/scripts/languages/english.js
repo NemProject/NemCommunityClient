@@ -523,6 +523,7 @@ define({
 		harvestedBlocks: {
 			title: 'Harvested Blocks',
 			feeEarned: 'Fees earned from the last 25 harvested blocks',
+			unknown: 'Unknown',
 			table: {
 				columns: [
 					'Height',

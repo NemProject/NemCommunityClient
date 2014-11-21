@@ -31,7 +31,13 @@
 				{{/if}}
 				<div class="recordList-overview">
 					<p class="recordList-overview-title">{{texts.harvestedBlocks.feeEarned}}</p>
-					<p><span title="{{Math.floor(harvestedBlocks.feeEarned / 1000000)}} NEM {{harvestedBlocks.feeEarned % 1000000}} mNEM" on-mouseover="registerToolTip">{{{formatCurrency(harvestedBlocks.feeEarned, false)}}} <span class="unit">NEM</span></span></p>
+					<p>
+						{{#if typeof harvestedBlocks.feeEarned === 'number'}}
+							<span title="{{Math.floor(harvestedBlocks.feeEarned / 1000000)}} NEM {{harvestedBlocks.feeEarned % 1000000}} mNEM" on-mouseover="registerToolTip">{{{formatCurrency(harvestedBlocks.feeEarned, false, false, false)}}} <span class="unit">NEM</span></span>
+						{{else}}
+							{{texts.harvestedBlocks.unknown}}
+						{{/if}}
+					</p>
 				</div>
 			</div>
 			<div class="recordList-body">

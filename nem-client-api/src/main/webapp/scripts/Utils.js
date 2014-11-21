@@ -165,6 +165,9 @@ define(function() {
             var decimalPart = mNem.toString(10);
             if (!noLimitFractionalPart) {
                 decimalPart = decimalPart.substring(0, Utils.config.fractionalDigits);
+                while (decimalPart.length < Utils.config.fractionalDigits) {
+                    decimalPart += '0';
+                }
             }
 
             if (dimTrailings) {                
