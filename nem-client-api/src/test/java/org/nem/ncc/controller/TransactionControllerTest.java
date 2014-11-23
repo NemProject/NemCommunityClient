@@ -8,7 +8,7 @@ import org.nem.core.connect.HttpPostRequest;
 import org.nem.core.connect.client.NisApiId;
 import org.nem.core.crypto.*;
 import org.nem.core.model.*;
-import org.nem.core.model.ncc.NemRequestResult;
+import org.nem.core.model.ncc.*;
 import org.nem.core.serialization.*;
 import org.nem.ncc.connector.PrimaryNisConnector;
 import org.nem.ncc.controller.requests.*;
