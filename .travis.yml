@@ -4,5 +4,5 @@ jdk:
   - oraclejdk8
 
 install:
- - wget http://bob.nem.ninja/nem-core__V0.4.35-BETA.jar
- - mvn install:install-file -Dfile=nem-core__V0.4.35-BETA.jar -DgroupId=org.nem.core -DartifactId=nem-core -Dversion=0.4.35-BETA -Dpackaging=jar
+ - wget http://bob.nem.ninja/nem-core__V0.4.36-BETA.jar
+ - mvn install:install-file -Dfile=nem-core__V0.4.36-BETA.jar -DgroupId=org.nem.core -DartifactId=nem-core -Dversion=0.4.36-BETA -Dpackaging=jar
