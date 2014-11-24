@@ -10,8 +10,8 @@ define({
 			101: 'Archivo no encontrado.',
 			102: 'El monedero no ha sido creado.',
 			103: 'El archivo de monedero está corrupto. Favor recuperar su monedero de una copia de seguridad que debio de haber creado en el momento en que el monedero fue creado o en que agrego una cuenta a este.',
-			104: 'La contrase&ntilde;a especificada es inválida. Esperemos que pueda recordar la contrase&ntilde;a correcta. La contrase&ntilde;a no puede ser recuperada si se pierde!',
-			106: 'Antes de que puedas comenzar a usar un monedero, este debe abrirse. Debes de proveer la contrase&ntilde;a para asegurar que eres elegible para accesar el monedero.',
+			104: 'La contraseña especificada es inválida. Esperemos que pueda recordar la contraseña correcta. La contraseña no puede ser recuperada si se pierde!',
+			106: 'Antes de que puedas comenzar a usar un monedero, este debe abrirse. Debes de proveer la contraseña para asegurar que eres elegible para accesar el monedero.',
 			107: 'El monedero no contiene esta cuenta.',
 			108: 'La cuenta no puede ser removida. Probablemente se debe a que la cuenta aún tiene un balance mayor de 0 NEMs o a que la cuenta que estás tratando de remover es la cuenta primaria.',
 			109: 'Ya existe un monedero con el mismo nombre. Por favor, elija otro nombre de monedero.',
@@ -29,36 +29,36 @@ define({
 			701: 'La fecha limite especificada esta en el pasado. La fecha limite especificada debe de estar dentro del periodo de un dia.',
 			702: 'La fecha limite especificada esta muy lejos en el futuro. La fecha limite especificada debe de estar dentro del periodo de un dia.',
 			703: 'La cuenta no tiene balance suficiente para enviar la cantidad especificada de NEMs.',
-			704: 'El texto especificado es muy largo para ser enviado via NEM. Por favor, intente reducir el tama&ntilde;o del mensaje que desea enviar.',
+			704: 'El texto especificado es muy largo para ser enviado via NEM. Por favor, intente reducir el tamaño del mensaje que desea enviar.',
 			705: 'The transaction hash already exists in the database or the list of unconfirmed transactions.',
 			706: 'La firma de la transacción no pudo ser verificada.',
 			707: 'La marca de tiempo de la transacción esta muy lejos en el pasado.',
 			708: 'La marca de tiempo de la transacción esta muy lejos en el futuro.',
 			709: 'La cuenta es desconocida. Una cuenta necesita ser parte de al menos una transacción (ya sea emisor o destinatario) para ser conocida en la red.',
-			901: 'There was an error setting up offline mode.',
-			1000: "The private key and the public key you have provided mismatch.",
-			1001: 'The public key and the address you have provided mismatch.',
-			1002: 'The address does not belong to the main network.'
+			901: 'Error al intentar establecer modo fuera de linea.',
+			1000: 'La clave publica y la clave privada especificada no combinan.',
+			1001: 'La clave publica y la direccion especificada no combinan.',
+			1002: 'La direccion no pertenece a la red principal.'
 		},
 		common: {
-			success: 'Success', //title of the Success message modals
+			success: 'Exito', //title of the Success message modals
 			appStatus: {
-				nccUnknown: 'NCC status is unknown',
-				nccUnavailable: 'NCC no esta disponible',
-				nccStarting: 'NCC is starting...',
-				nisUnknown: 'NIS status is unknown',
-				nisUnavailable: 'NIS no esta disponible',
-				nisStarting: 'NIS is starting...',
-				notBooted: 'NIS requires to be booted. Please open your wallet and boot a local node via the popup dialog or configure the auto-boot setting.',
-				booting: 'Booting NIS...',
-				nisInfoNotAvailable: 'NIS info is not avaiable yet. Trying to retrieve NIS info...',
+				nccUnknown: 'El estado de NCC es desconocido',
+				nccUnavailable: 'NCC no está disponible',
+				nccStarting: 'NCC está iniciando...',
+				nisUnknown: 'El estado de NIS es desconocido',
+				nisUnavailable: 'NIS no está disponible',
+				nisStarting: 'NIS esta iniciando...',
+				notBooted: 'NIS requiere ser iniciado. Por favor, abra su monedero e inicie un nodo local manualmente o active la opción de Auto-iniciación.',
+				booting: 'Iniciando NIS...',
+				nisInfoNotAvailable: 'Informacion de NIS no esta disponible. Intentando recuperar información de NIS...',
 				synchronizing: 'NIS está sincronizando. En el bloque {{1}}: aproximadamente {{2}} día(s) atras.',
 				daysBehind: {
-					0: 'less than 1 day',
-					1: '1 day',
-					many: '{{1}} days'
+					0: 'menos de 1 dia',
+					1: '1 dia',
+					many: '{{1}} dias'
 				},
-				synchronized: 'NIS is synchronized!'
+				synchronized: 'NIS está sincronizado!'
 			}
 		},
 		modals: {
@@ -71,28 +71,28 @@ define({
 				no: 'No'
 			},
 			settings: {
-				title: 'Settings',
+				title: 'Configuración',
 				language: {
-					label: 'Language'
+					label: 'Idioma'
 				},
 				remoteServer: {
-					tabTitle: 'Remote Server',
-					protocol: 'Protocol',
+					tabTitle: 'Servidor Remoto',
+					protocol: 'Protocolo',
 					protocolOptions: {
 						http: 'HTTP'
 					},
-					host: 'Host',
-					port: 'Port'
+					host: 'Dirección de Host',
+					port: 'Puerto'
 				},
 				autoBoot: {
-					tabTitle: 'Auto-boot',
-					name: 'Node name',
-					account: 'Account',
-					primaryAccount: 'Primary Account',
-					auto: 'Auto boot when a wallet is opened'
+					tabTitle: 'Auto-iniciación',
+					name: 'Nombre de nodo',
+					account: 'Cuenta',
+					primaryAccount: 'Cuenta Primaria',
+					auto: 'Iniciación automatica al abrir una cartera'
 				},
-				save: 'Save',
-				saveSuccess: 'Settings have been saved successfully'
+				save: 'Guardar',
+				saveSuccess: 'La configuración ha sido actualizada con exito'
 			},
 			sendNem: {
 				title: 'Enviar NEM',
@@ -100,46 +100,46 @@ define({
 				nullLabelDesc: "Esta cuenta no está etiquetada.",
 				amount: 'Cantidad',
 				recipient: "Cuenta de destinatario",
-				recipientValidation: 'Account addresses must be 40 character long excluding dashes',
+				recipientValidation: 'Direcciones de cuentas son de 40 caracteres de largo, excluyendo guiones.',
 				message: 'Mensaje',
 				encrypt: 'Encriptar mensaje',
 				fee: 'Tarifa',
-				feeValidation: 'Fee must not be less than the minimum fee',
+				feeValidation: 'Tarifa no debe ser inferior a la tarifa mínima',
 				dueBy: 'Debido por',
-				useMinimumFee: 'Use minimum fee',
+				useMinimumFee: 'Usar tarifa mínima',
 				hours: 'horas',
-				password: 'Contrase&ntilde;a',
-				passwordValidation: 'Password must not be blank',
+				password: 'Contraseña',
+				passwordValidation: 'La contraseña no debe ser vacía',
 				send: 'Enviar',
-				cancel: 'Cancel',
+				cancel: 'Cancelar',
 				sending: 'Enviando...',
-				successMessage: '&iexcl;La transacción ha sido enviada exitosamente!',
+				successMessage: '¡La transacción ha sido enviada exitosamente!',
 				txConfirm: {
-					title: 'Confirm Transaction',
-					amount: 'Amount',
-					to: 'To',
-					fee: 'Fee',
-					dueBy: 'Due by',
-					hours: 'hour(s)',
+					title: 'Confirmar Transacción',
+					amount: 'Cantidad',
+					to: 'Para',
+					fee: 'Tarifa',
+					dueBy: 'Debido por',
+					hours: 'hora(s)',
 					total: 'Total',
-					message: 'Message',
-					encrypted: 'Message is encrypted',
-					noMessage: 'No message',
-					cancel: 'Cancel',
-					confirm: 'Confirm',
-					sending: 'Sending...'
+					message: 'Mensaje',
+					encrypted: 'Mensaje está encriptado',
+					noMessage: 'Sin mensaje',
+					cancel: 'Cancelar',
+					confirm: 'Confirmar',
+					sending: 'Enviando...'
 				},
 				notBootedWarning: {
 					title: 'Nodo no ha sido iniciado!',
-					message: 'A local node needs to be booted before you can send NEM!'
+					message: 'Un nodo local necesita ser iniciado para poder realizar transacciones!'
 				},
 				bootingWarning: {
-					title: 'Node is being booted',
-					message: 'Please wait until booting process is done to send your transaction.'
+					title: 'Nodo esta iniciando',
+					message: 'Por favor, espere a que el proceso de iniciacion finalize para enviar su transaccion.'
 				}
 			},
 			clientInfo: {
-				title: 'Informacion de cliente',
+				title: 'Información de cliente',
 				ncc: 'Cliente de Comunidad NEM - NCC',
 				signer: 'Firmante',
 				remoteServer: 'Servidor Remoto',
@@ -166,18 +166,18 @@ define({
 				encrypted: 'Mensaje está encriptado.',
 				time: 'Marca de tiempo',
 				confirmations: 'Confirmaciones',
-				confirmationsUnknown: 'Unknown',
+				confirmationsUnknown: 'Desconocido',
 				amount: 'Cantidad',
 				fee: 'Tarifa'
 			},
 			bootLocalNode: {
-				title: 'Inicializar nodo local',
-				account: 'Cuenta para inicializar nodo local',
+				title: 'Iniciar nodo local',
+				account: 'Cuenta para iniciar nodo local',
 				noLabel: '<span class="null">&lt;Sin etiqueta&gt;</span>',
 				wallet: 'Monedero',
 				node: 'Nombre de nodo',
-				boot: 'Inicializar',
-				booting: 'Inicializando...'
+				boot: 'Iniciar',
+				booting: 'Iniciando...'
 			},
 			closeWallet: {
 				title: 'Cerrar monedero',
@@ -185,55 +185,55 @@ define({
 			},
 			createAccount: {
 				title: 'Crear cuenta nueva',
-				label: 'Private label',
+				label: 'Etiqueta privada',
 				wallet: 'Monedero',
-				password: "Contrase&ntilde;a de monedero",
+				password: "Contraseña de monedero",
 				successMessage: 'Cuenta {{1}} {{#2}}({{2}}){{/2}} ha sido creada!',
 				create: 'Crear'
 			},
 			createRealAccountData: {
-				title: 'Create real account data',
-				message: 'The below data is for your real account after NEM launches. Save the the address, the public key, and most importantly the private key somewhere safe. If you lose the private key, your account and all your real NEMs will be lost FOREVER!',
-				address: 'Address',
-				publicKey: 'Public key',
-				privateKey: 'Private key',
+				title: 'Crear datos de cuenta real',
+				message: 'Los datos en la parte inferior son de una cuenta real para despues del lanzamiento de NEM. Guarde la direccion, la clave publica, y la clave privada en un lugar seguro. Perder la llave privada implica perder acceso a la cuenta y al balance de NEMs PARA SIEMPRE!',
+				address: 'Direccion',
+				publicKey: 'Clave publica',
+				privateKey: 'Clave privada',
 				confirm: {
-					title: 'Save the private key',
-					message: 'Are you sure your private key has been saved into a safe place?'
+					title: 'Guardar la clave privada',
+					message: 'Esta seguro que ha guardado la clave privada en un lugar seguro?'
 				},
 				recheck: {
-					title: 'Re-check your saved private key',
-					message: "Please re-enter your private key you've just been provided to check if you have the correct one saved. If your private key is already lost, you may want to create a new one.",
+					title: 'Vuelva a verificar su clave privada',
+					message: 'Vuelva a introducir la clave privada para verificar que esta haya sido guardada correctamente. De lo contrario, deberia crear una nueva.',
 					correct: {
-						title: 'Nice!',
-						message: 'You seem to have your correct private key saved. Please remember to always keep it safe and secured!'
+						title: 'Bien!',
+						message: 'Parece haber guardado la clave privada correctamente. Recuerde siempre mantenerla en un lugar seguro!'
 					},
 					incorrect: {
 						title: 'Hmm...',
-						message: "The private key you've just entered is not correct! Please double check and enter it once again.",
-						tryAgain: 'Try to enter again',
-						seeOriginal: 'See the original data'
+						message: "La clave privada que introdujo no es correcta! Verifique e introduscala nuevamente.",
+						tryAgain: 'Intente introducirla de nuevo',
+						seeOriginal: 'Ver los datos originales'
 					},
-					recheck: 'Check'
+					recheck: 'Verificar'
 				},
 				ok: 'OK'
 			},
 			verifyRealAccountData: {
-				title: 'Verify real account data',
-				message: 'Re-enter your saved address, public key and private key below to check if they match',
-				address: 'Address',
-				publicKey: 'Public key',
-				privateKey: 'Private key',
-				dataMatched: 'Everything seems good, your entered address, public key, and private key match.',
-				verify: 'Verify'
+				title: 'Verificar información de cuenta real',
+				message: 'Vuelva a introducir la dirección, clave publica y clave privada para verificar que los datos son validos',
+				address: 'Dirección',
+				publicKey: 'Clave publica',
+				privateKey: 'Clave privada',
+				dataMatched: 'Todo parece estar bien. La dirección, clave publica y clave privada especificadas son validas.',
+				verify: 'Verificar'
 			},
 			addAccount: {
-				title: 'A&ntilde;adir cuenta existente',
-				privateKey: "Clave privada de cuenta",
+				title: 'Añadir cuenta existente',
+				privateKey: "Clave privada de la cuenta",
 				wallet: 'Monedero',
-				password: "Contrase&ntilde;a de monedero",
-				successMessage: 'Cuenta {{1}} {{#2}}({{2}}){{/2}} ha sido a&ntilde;adida al monedero!',
-				add: 'A&ntilde;adir',
+				password: "Contraseña de monedero",
+				successMessage: 'Cuenta {{1}} {{#2}}({{2}}){{/2}} ha sido añadida al monedero!',
+				add: 'Añadir',
 				label: 'Etiqueta'
 			},
 			setPrimary: {
@@ -241,7 +241,7 @@ define({
 				account: 'Cuenta a ser definida como primaria',
 				noLabel: '<span class="null">&lt;Sin etiqueta&gt;</span>',
 				wallet: 'Monedero',
-				password: "Contrase&ntilde;a de monedero",
+				password: "Contraseña de monedero",
 				successMessage: 'Cuenta {{1}} {{#2}}({{2}}){{/2}} ha sido definida como cuenta primaria!',
 				set: 'Definir como primaria'
 			},
@@ -249,33 +249,33 @@ define({
 				title: 'Cambiar nombre de monedero',
 				wallet: 'Nombre actual de monedero',
 				newName: 'Nuevo nombre de monedero',
-				password: "Contrase&ntilde;a de monedero",
-				successMessage: 'El nombre de monedero ha sido cambiado exitosamente de <em>{{1}}</em> a <em>{{2}}</em>',
+				password: "Contraseña de monedero",
+				successMessage: 'El nombre de monedero ha sido cambiado con exito de <em>{{1}}</em> a <em>{{2}}</em>',
 				change: 'Cambiar'
 			},
 			changeWalletPassword: {
-				title: 'Cambiar contrase&ntilde;a de monedero',
+				title: 'Cambiar contraseña de monedero',
 				wallet: 'Monedero',
-				password: 'Contrase&ntilde;a actual',
-				newPassword: 'Nueva contrase&ntilde;a',
-				confirmPassword: 'Confirmar nueva contrase&ntilde;a',
-				successMessage: 'La contrase&ntilde;a de monedero ha sido cambiada exitosamente.',
+				password: 'Contraseña actual',
+				newPassword: 'Nueva contraseña',
+				confirmPassword: 'Confirmar nueva contraseña',
+				successMessage: 'La contraseña de monedero ha sido actualizada con exito.',
 				change: 'Cambiar',
 				passwordNotMatchTitle: 'Oops!',
-				passwordNotMatchMessage: 'La nueva contrase&ntilde;a especificada no coincide con la contrase&ntilde;a de confirmación. Por favor, asegurese de especificar la nueva contrase&ntilde;a correctamente.'
+				passwordNotMatchMessage: 'La nueva contraseña especificada no coincide con la contraseña de confirmación. Por favor, asegurese de especificar la nueva contraseña correctamente.'
 			},
 			changeAccountLabel: {
 				title: 'Cambiar etiqueta de cuenta',
 				label: 'Etiqueta de cuenta',
 				wallet: 'Monedero',
-				password: "Contrase&ntilde;a de monedero",
+				password: "Contraseña de monedero",
 				successMessage: 'Cuenta {{1}} ahora esta etiquetada como {{2}}',
 				change: 'Cambiar'
 			},
 			removeAccount: {
 				title: 'Remover cuenta',
 				wallet: 'Monedero',
-				password: "Contrase&ntilde;a de monedero",
+				password: "Contraseña de monedero",
 				warning: 'Por favor, asegúrese que la cuenta que desea remover no contiene NEMs, ya que estos se perderian para siempre al removerla.',
 				successMessage: 'Cuenta {{1}} {{#2}}({{2}}){{/2}} ha sido removida!',
 				remove: 'Remover'
@@ -289,37 +289,37 @@ define({
 				message: 'Está seguro que desea cerrar el Cliente de Comunidad NEM?'
 			},
 			activateRemote: {
-				title: 'Activate Remote harvesting',
-				wallet: 'Wallet',
-				account: 'Account',
-				hoursDue: 'Hours due',
-				password: "Wallet's password",
-				activate: 'Activate'
+				title: 'Activar recolecta remota',
+				wallet: 'Monedero',
+				account: 'Cuenta',
+				hoursDue: 'Debido por',
+				password: "Contraseña de monedero",
+				activate: 'Activar'
 			},
 			deactivateRemote: {
-				title: 'Deactivate Remote harvesting',
-				wallet: 'Wallet',
-				account: 'Account',
-				hoursDue: 'Hours due',
-				password: "Wallet's password",
-				deactivate: 'Deactivate'
+				title: 'Desactivar recolecta remota',
+				wallet: 'Monedero',
+				account: 'Cuenta',
+				hoursDue: 'Debido por',
+				password: "Contraseña de monedero",
+				deactivate: 'Desactivar'
 			},
 			startRemote: {
-				title: 'Start Remote harvesting',
-				wallet: 'Wallet',
-				account: 'Account',
-				password: "Wallet's password",
-				start: 'Start'
+				title: 'Comenzar recolecta remota',
+				wallet: 'Monedero',
+				account: 'Cuenta',
+				password: "Contraseña de monedero",
+				start: 'Comenzar'
 			},
 			stopRemote: {
-				title: 'Stop Remote harvesting',
-				wallet: 'Wallet',
-				account: 'Account',
-				password: "Wallet's password",
-				stop: 'Stop'
+				title: 'Detener recolecta remota',
+				wallet: 'Monedero',
+				account: 'Cuenta',
+				password: "Contraseña de monedero",
+				stop: 'Detener'
 			},
 			logoutWarning: {
-				leavePage: "You're leaving your wallet. Remember that if you leave your wallet this way, some others may still be able to access your wallet from this computer.\n\nTo prevent that from happening, please log out using the \"Close wallet\" menu item in the top-right dropdown menu before you close the browser tab or navigate away.",
+				leavePage: "You're leaving your wallet. Remember that if you leave your wallet this way, some others may still be able to access your wallet from this computer.\n\nTo prevent that from happening, please log out using the \"Close wallet\" menu item in the top-right dropdown menu before you close the browser tab or navigate away."
 			}
 		},
 		landing: {
@@ -328,13 +328,13 @@ define({
 			nav: {
 				start: 'Comienze aquí',
 				about: 'Acerca de NEM',
-				settings: 'Settings'
+				settings: 'Configuracion'
 			},
 			main: {
 				leftTitle: 'Nuevo en <em>NEM</em>?',
 				leftButton: 'Crear nuevo monedero',
 				walletNamePlh: 'Nombre de su monedero',
-				passwordPlh: 'Contrase&ntilde;a',
+				passwordPlh: 'Contraseña',
 				create: 'Crear',
 				rightTitle: 'Ya es miembro de <em>NEM</em>?',
 				rightButton: 'Abrir su monedero',
@@ -390,33 +390,33 @@ define({
 				refreshInfo: 'Actualizar informacion',
 				bootLocalNode: 'Inicializar nodo local',
 				changeWalletName: 'Cambiar nombre de monedero',
-				changeWalletPassword: 'Cambiar contrase&ntilde;a de monedero',
+				changeWalletPassword: 'Cambiar contraseña de monedero',
 				mergeWallets: 'Fusionar monederos',
 				exportWallet: 'Exportar monedero',
 				createAccount: 'Crear cuenta nueva',
-				createRealAccountData: 'Create real account data',
-				verifyRealAccountData: 'Verify real account data',
-				addAccount: 'A&ntilde;adir cuenta existente',
+				createRealAccountData: 'Crear datos de cuenta real',
+				verifyRealAccountData: 'Verificar datos de cuenta real',
+				addAccount: 'Añadir cuenta existente',
 				changeAccountLabel: 'Cambiar etiqueta de cuenta',
-				setPrimary: 'Set como cuenta primaria',
+				setPrimary: 'Definir como cuenta primaria',
 				removeAccount: 'Remover cuenta',
 				clientInfo: 'Informacion de cliente',
 				closeWallet: 'Cerrar monedero',
 				closeProgram: 'Cerrar programa',
-				copyClipboard: 'Copy address to clipboard'
+				copyClipboard: 'Copiar dirección al portapapeles'
 			},
 			nav: [
-				'Dashboard',
-				'Messages',
-				'Contacts',
-				'Transactions',
-				'Harvested blocks',
-				'Asset Exchange',
-				'News',
-				'Applications',
-				'Accounts',
-				'Settings',
-				'Close Program'
+				'Panel de información',
+				'Mensajes',
+				'Contactos',
+				'Transacciones',
+				'Bloques recolectados',
+				'Intercambio de activos',
+				'Noticias',
+				'Aplicaciones',
+				'Cuentas',
+				'Configuración',
+				'Cerrar programa'
 			],
 			bootNodeWarning: "Se necesita iniciar un nodo local antes de poder utilizar todas las características de NCC."
 		},
@@ -450,14 +450,14 @@ define({
 				unknown: 'desconocido',
 				columns: [
 					'',
-					'Time',
-					'Sender/Recipient',
-					'Message',
+					'Tiempo',
+					'Emisor/Destinatario',
+					'Mensaje',
 					'',
-					'Details',
-					'Confirmations',
-					'Fee',
-					'Amount'
+					'Detalles',
+					'Confirmaciones',
+					'Tarifa',
+					'Cantidad'
 				],
 				types: {
 					pending: 'Transacción pendiente',
@@ -468,7 +468,7 @@ define({
 				noMessage: 'Sin mensaje',
 				encrypted: 'Mensaje esta encriptado',
 				view: 'Ver',
-				confirmationsUnknown: 'Unknown',
+				confirmationsUnknown: 'Desconocido',
 				pending: 'Pendiente',
 				seeAll: 'Ver todas las transacciones',
 				noTransactions: 'Aun no se ha ejecutado ninguna transacción'
@@ -489,22 +489,22 @@ define({
 			sendNem: 'Enviar NEM',
 			balance: 'Balance actual',
 			filters: {
-				confirmed: 'Confirmed',
-				unconfirmed: 'Unconfirmed',
-				incoming: 'Entrante',
-				outgoing: 'Saliente'
+				confirmed: 'Confirmadas',
+				unconfirmed: 'Sin confirmar',
+				incoming: 'Entrantes',
+				outgoing: 'Salientes'
 			},
 			table: {
 				columns: [
 					'',
-					'Time',
-					'Sender/Recipient',
-					'Message',
+					'Tiempo',
+					'Emisor/Destinatario',
+					'Mensaje',
 					'',
-					'Details',
-					'Confirmations',
-					'Fee',
-					'Amount'
+					'Detalles',
+					'Confirmaciones',
+					'Tarifa',
+					'Cantidad'
 				],
 				types: {
 					pending: 'Transacción pendiente',
@@ -515,7 +515,7 @@ define({
 				noMessage: 'Sin mensaje',
 				encrypted: 'Mensaje esta encriptado',
 				view: 'Ver',
-				confirmationsUnknown: 'Unknown',
+				confirmationsUnknown: 'Desconocido',
 				pending: 'Pendiente',
 				noTransactions: 'Aun no se ha ejecutado ninguna transacción',
 				loading: 'Cargando mas transacciones...'
@@ -527,10 +527,10 @@ define({
 			unknown: 'Unknown',
 			table: {
 				columns: [
-					'Height',
-					'Time',
-					'Block hash',
-					'Fee'
+					'Altura',
+					'Tiempo',
+					'Hash de Bloque',
+					'Tarifa'
 				],
 				noBlocks: 'No hay bloques recolectados',
 				loading: 'Ver bloques recolectados mas viejos'
@@ -541,8 +541,8 @@ define({
 				harvesting: 'Recolectando',
 				stop: 'Detener recolecta',
 				remoteHarvest: {
-					startRemoteHarvesting: 'Start remote harvesting',
-					stopRemoteHarvesting: 'Stop remote harvesting'
+					startRemoteHarvesting: 'Comenzar recolecta remota',
+					stopRemoteHarvesting: 'Detener recolecta remota'
 				}
 			}
 		},
@@ -552,7 +552,7 @@ define({
 				name: 'Idioma'
 			}],
 			save: 'Guardar cambios',
-			saveSuccess: 'Settings have been saved successfully'
+			saveSuccess: 'La configuración ha sido actualizada con exito'
 		}
 	}
 });
