@@ -109,7 +109,7 @@ define({
 				useMinimumFee: "Ползвай минималната такса",
 				hours: "Часове",
 				password: "Парола",
-				passwordValidation: 'Password must not be blank',
+				passwordValidation: "Паролата не трябва да е празна",
 				send: "Изпрати",
 				cancel: "Отказ",
 				sending: "Изпращам...",
@@ -158,7 +158,7 @@ define({
 				pending: "В очакване",
 				outgoing: "Изходящи",
 				incoming: "Входящи",
-				self: "Самостоятелна",
+				self: "Собственна",
 				sender: "Изпращач",
 				recipient: "Получател",
 				message: "Съобщение",
@@ -319,7 +319,7 @@ define({
 				stop: "Стоп"
 			},
 			logoutWarning: {
-				leavePage: "You're leaving your wallet. Remember that if you leave your wallet this way, some others may still be able to access your wallet from this computer.\n\nTo prevent that from happening, please log out using the \"Close wallet\" menu item in the top-right dropdown menu before you close the browser tab or navigate away.\n",
+				leavePage: "Вие напускате вашия портфейл.Запомнете че напускайки вашия портфейл по този начин ,някой друг може да има достъп до портфейла ви от този компютър."
 			}
 		},
 		landing: {
@@ -335,7 +335,9 @@ define({
 				leftButton: "Създай нов портфейл",
 				walletNamePlh: "Име на вашия портфейл",
 				passwordPlh: "Парола",
+				confirmPasswordPlh: "Потвърдете паролата",
 				create: "Създай",
+				creating: "Създаване...",
 				rightTitle: "Вече сте <em>NEM</em>ber?",
 				rightButton: "Отворете вашия портфейл",
 				openButton: "Отвори",
@@ -343,35 +345,41 @@ define({
 				copyright: "Фотография от <em>Cas Cornelissen</em>"
 			},
 			carousel: {
-				items: [{
-					title: "NCC криптира твоя портфейл",
-					description: "<em>Сигурността</em> е най важната задача за NEM състояща се в защита на вашите NEM монети и активи."
-				}, {
-					title: "NCC криптира твоя портфейл",
-					description: "<em>Сигурността</em> е най важната задача за NEM състояща се в защита на вашите NEM монети и активи."
-				}]
+				items: [
+					{
+						title: "NCC криптира твоя портфейл",
+						description: "<em>Сигурността</em> е най важната задача за NEM състояща се в защита на вашите NEM монети и активи."
+					},
+					{
+						title: "NCC криптира твоя портфейл",
+						description: "<em>Сигурността</em> е най важната задача за NEM състояща се в защита на вашите NEM монети и активи."
+					}
+				]
 			},
 			about: {
-				sections: [{
-					title: "Как работи NCC?",
-					paragraphs: [
-						"<strong>NCC</strong> предоставя достъп до вашите активи и NEM монети като обикновен портфейл.Вие можете",
-						"<strong>NCC</strong> изисква достъп до <strong>NIS</strong> сървър за да може да работи.Локалния сървър трябва да е активен(той се инсталира заедно <strong>NCC</strong>)",
-						"Вие също може да конфигурирате достъп до отдалечен <strong>NIS</strong>."
-					],
-					listItems: [
-						"Да имате няколко портфейла",
-						"Да дефинирате няколко акаунта да се съдържат в един портфейл."
-					]
-				}, {
-					title: "Какво е &#42;NIS?",
-					paragraphs: [
-						"Този компонент отговаря за функционирането на <strong>NEM</strong> облака.",
-						"Колкото повече <strong>NIS</strong> толкова по добра е сигурността.",
-						"<strong>NIS</strong> това е точката за достъп за <strong>NEM</strong> облака."
-					],
-					legend: "<strong>&#42;NIS</strong> се разшифрова <strong>NEM Infrastructure Server</strong>"
-				}]
+				sections: [
+					{
+						title: "Как работи NCC?",
+						paragraphs: [
+							"<strong>NCC</strong> предоставя достъп до вашите активи и NEM монети като обикновен портфейл.Вие можете",
+							"<strong>NCC</strong> изисква достъп до <strong>NIS</strong> сървър за да може да работи.Локалния сървър трябва да е активен(той се инсталира заедно <strong>NCC</strong>)",
+							"Вие също може да конфигурирате достъп до отдалечен <strong>NIS</strong>."
+						],
+						listItems: [
+							"Да имате няколко портфейла",
+							"Да дефинирате няколко акаунта да се съдържат в един портфейл."
+						]
+					},
+					{
+						title: "Какво е &#42;NIS?",
+						paragraphs: [
+							"Този компонент отговаря за функционирането на <strong>NEM</strong> облака.",
+							"Колкото повече <strong>NIS</strong> толкова по добра е сигурността.",
+							"<strong>NIS</strong> това е точката за достъп за <strong>NEM</strong> облака."
+						],
+						legend: "<strong>&#42;NIS</strong> се разшифрова <strong>NEM Infrastructure Server</strong>"
+					}
+				]
 			},
 			footer: {
 				copyright: "&copy; Copyright 2014. NEM Community Client."
@@ -463,7 +471,7 @@ define({
 					pending: "Чакащи транзакции",
 					outgoing: "Изходящи транзакции",
 					incoming: "Входящи транзакции",
-					self: "Самостоятелни транзакции"
+					self: "Собственни транзакции"
 				},
 				noMessage: "Няма съобщение",
 				encrypted: "Съобщението е криптирано",
@@ -510,7 +518,7 @@ define({
 					pending: "Чакащи транзакции",
 					outgoing: "Изходящи транзакции",
 					incoming: "Входящи транзакции",
-					self: "Самостоятелни транзакции"
+					self: "Собственни транзакции"
 				},
 				noMessage: "Няма съобщение",
 				encrypted: "Съобщението е криптирано",
@@ -524,7 +532,7 @@ define({
 		harvestedBlocks: {
 			title: "Генерирани блокове",
 			feeEarned: "Такси събрани от последните 25 генерирани блока",
-			unknown: 'Unknown',
+			unknown: "Неизвестно",
 			table: {
 				columns: [
 					"Височина",
@@ -548,9 +556,11 @@ define({
 		},
 		settings: {
 			title: "Настройки",
-			settings: [{
-				name: "Език"
-			}],
+			settings: [
+				{
+					name: "Език"
+				}
+			],
 			save: "Запази промените",
 			saveSuccess: "Настройките бяха успешно запазени"
 		}
