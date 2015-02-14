@@ -97,7 +97,7 @@ define({
 			privateLabel: "Identificação",
 			publicLabel: 'Identificação pública',
 			noCharge: 'A conta atual <b>NÃO</b> pode receber taxas de transações, uma conta do tipo Multisig a acoberta',
-			justUse: 'Just use'
+			justUse: 'Usar apenas'
 		},
 		transactionTypes: [
 			'TRANSAÇÕES DE VALORES',
@@ -174,7 +174,7 @@ define({
 					from: 'Conta Multisig',
 					to: "Destinatário",
 					amount: "Quantidade",
-					fee: 'Inner Fee',
+					fee: 'Taxa',
 					deadline: 'Prazo final'
 				},
 				multisigFees: 'Taxas Multisig',
@@ -246,7 +246,7 @@ define({
 					message: 'Por favor, espere até o nó inicializar completamente para poder enviar sua transação.'
 				},
 				loadingWarning: {
-					title: 'Loading db'
+					title: 'Carregando blocos'
 				}
 			},
 			clientInfo: {
@@ -298,12 +298,12 @@ define({
 				add: "Adicionar ao arquivo de contatos",
 				remove: "Remover do arquivo de contatos",
 				balance: "Balanço",
-				vested: "vested",
+				vested: "Adquirido",
 				importance: "Importancia",
 				publicKey: "Chave Publica",
 				noPublicKey: "Sem chave públida",
 				harvestedBlocks: "Blocos colheitados",
-				close: "Close"
+				close: "Fechar"
 			},
 			bootLocalNode: {
 				title: "Inicializar nó local",
