@@ -10,7 +10,7 @@ define({
 			101: 'Die Brieftasche existiert nicht.',
 			102: 'Die Brieftasche konnte nicht erstellt werden.',
 			103: 'Die Brieftasche ist beschädigt. Bitte stelle die Brieftasche aus einem Backup wieder her.',
-			104: 'Das Passwort für die Brieftasche ist nicht korrekt.',
+			104: 'Das Passwort ist nicht korrekt.',
 			105: 'Es wurde kein Passwort für die Brieftasche eingegeben.',
 			106: 'Bevor du eine Brieftasche benutzen kannst, muss sie geöffnet werden. Um sicher zu stellen, dass du berechtigt bist, die Brieftasche zu verwenden, musst du das Passwort für die Brieftasche eingeben.',
 			107: 'Die Brieftasche enthält dieses Konto nicht.',
@@ -23,7 +23,7 @@ define({
 			121: 'Das Adressbuch existiert nicht.',
 			122: 'Das Adressbuch konnte nicht erstellt werden.',
 			123: 'Das Adressbuch ist beschädigt. Bitte stelle das Adressbuch aus einem Backup wieder her.',
-			124: 'Das Passwort für das Adressbuch ist nicht korrekt.',
+			124: 'Das Passwort ist nicht korrekt.',
 			125: 'Es wurde kein Passwort für das Adressbuch eingegeben.',
 			127: 'Das Adressbuch enthält diese Adresse nicht.',
 			128: 'Die Adresse ist ungültig.',
@@ -33,21 +33,21 @@ define({
 			132: 'Die Dateiendung des Adressbuchs ist falsch.',
 			133: 'Das Adressbuch konnte nicht gelöscht werden.',
 			202: 'Die verschlüsselte Nachricht kann nicht gesendet werden, da der Empfänger bisher noch keine Transaktion gesendet hat und deswegen der öffentliche Schlüssel des Empfängers unbekannt ist.',
-			203: 'The account cannot be converted because not all cosignatories are known. They either need to be in the same wallet or have made at least one transaction.',
+			203: 'Das Konto kann nicht umgewandelt werden, da nicht alle Mitsignierer bekannt sind. \'Bekannt\' heißt hier, dass die entsprechenden Konten entweder schon mal eine Transaktion gesendet oder empfangen haben müssen oder sich in deiner Brieftasche befinden müssen.',
 			305: 'Der NEM Infrastructure Server (NIS) ist nicht verfügbar.\n\nEin Neustart der NEM Software könnte dieses Problem beheben.\n\nFalls du einen Remote-NIS benutzt, überprüfe den eingestellten Host auf Tippfehler oder benutze einen anderen Remote-NIS.',
 			306: 'Es ist ein unvorhergesehener Fehler aufgetreten.\n\nSollte dieser Fehler wiederholt auftreten, könnte ein Neustart der NEM Software das Problem beheben. Falls nicht, eröffne bitte einen Thread in der NEM NIS/NCC Community.',
 			400: 'Einer der Parameter fehlt oder ist ungültig.',
-			401: 'Dieser Vorgang kann nicht durchgeführt werden, da der private Schlüssel gestohlen werden könnte, wenn er an das remote NIS gesendet wird.',
+			401: 'Dieser Vorgang wurde aus Sicherheitsgründen unterbunden, denn der private Schlüssel könnte gestohlen werden, wenn er an einen Remote-NIS gesendet wird.',
 			404: 'Die angeforderte Ressource wurde nicht gefunden.',
 			500: 'Es ist ein unvorhergesehener Fehler aufgetreten.\n\nSollte dieser Fehler wiederholt auftreten, könnte ein Neustart der NEM Software das Problem beheben. Falls nicht, eröffne bitte einen Thread in der NEM NIS/NCC Community.',
 			600: 'Der NEM Infrastructure Server (NIS) muss gebootet sein, damit Transaktionen gesendet und empfangen werden können. Bitte boote NIS mit Hilfe des NCC Boot-Menüpunkts.',
 			601: 'Der NEM Infrastructure Server (NIS) ist bereits gebootet. Es ist nicht nötig, NIS ein weiteres Mal zu booten.',
 			602: 'Fast fertig! NEM Infrastructure Server (NIS) lädt gerade die Blöcke. Die Brieftasche ist einsatzbereit, wenn alle Blöcke geladen sind.',
 			699: 'Die maximale Anzahl an Harvestern, die auf diesem Server erlaubt ist, ist erreicht.',
-			700: 'Das angegebene Konto erfüllt nicht die Grundkriterien, um Blöcke zu erzeugen. Um Blöcke erzeugen zu können, wird ein Kontostand von mindestens 1.000 XEM benötigt.',
+			700: 'Das angegebene Konto erfüllt nicht die Grundkriterien, um Blöcke zu erzeugen. Um Blöcke erzeugen zu können, muss der zur Ernte verwendbare Anteil deines Kontostands mindestens 10.000 XEM betragen.',
 			701: 'Das angegebene Verfallsdatum liegt in der Vergangenheit. Das Verfallsdatum muss in einem Zeitraum von einem Tag liegen.',
 			702: 'Das angegebene Verfallsdatum liegt zu weit in der Zukunft. Das Verfallsdatum muss in einem Zeitraum von einem Tag liegen.',
-			703: 'Your account does not have the right balance to make this transaction.',
+			703: 'Der Kontostand reicht nicht aus, um diese Transaktion durchzuführen.',
 			704: 'Die eingegebene Nachricht ist zu lang. Bitte reduziere die Länge der Nachricht, um sie versenden zu können.',
 			705: 'Der Transaktionshash existiert bereits in der Datenbank oder in der Liste der ausstehenden Transaktionen.',
 			706: 'Die Signatur der Transaktion konnte nicht verifiziert werden.',
@@ -55,12 +55,12 @@ define({
 			708: 'Der Zeitstempel der Transaktion liegt zu weit in der Zukunft.',
 			709: 'Das Konto ist unbekannt. Ein Konto muss mindestens einmal als Absender oder Empfänger in einer Transaktion auftreten, um dem Netzwerk bekannt zu sein.',
 			710: 'Die Transaktion wurde abgelehnt, weil gerade zu viele Transaktionen gesendet werden. Eine höhere Gebühr erhöht die Chance, dass die Transaktion akzeptiert wird.',
-			730: 'Importance transfer transaction (delegated harvesting) conflicts with existing transaction.',
-			731: 'Delegated harvesting account has non zero balance and cannot be used.',
+			730: 'Die Wichtigkeitsübertragung (für die delegierte Ernte) steht im Konflikt mit einer anderen Wichtigkeitsübertragung.',
+			731: 'Das Konto, welches für die delegierte Ernte benutzt werden soll, hat einen Kontostand größer als Null und kann daher nicht verwendet werden.',
 			732: 'Übertragung der Wichtigkeit abgelehnt, da es noch eine ausstehende Übertragung gibt.',
-			733: 'Delegated harvesting is already active.',
-			734: 'Delegated harvesting is NOT active. Cannot deactivate.',
-			740: 'Transaktion ist für ein Multisig-Konto nicht erlaubt.',
+			733: 'Die delegierte Ernte ist bereits freigeschaltet.',
+			734: 'Die delegierte Ernte ist bereits deaktiviert.',
+			740: 'Diese Transaktion ist für ein Multisig-Konto nicht erlaubt.',
 			741: 'Multisig-Signierung abgelehnt. Das aktuelle Konto ist kein Mitsignierer eines Multisig-Kontos.',
 			742: 'Multisig-Signierung abgelehnt. Die zu signierende Multisig-Transaktion existiert nicht.',
 			743: 'Änderung des Multisig-Kontos abgelehnt. Eines der hinzugefügten Konten ist schon Mitsignierer.',
@@ -72,7 +72,7 @@ define({
 		common: {
 			success: 'Erfolg',
 			unknown: 'Unbekannter Status',
-			unknownMessage: 'Ncc did not get response in a timely manner. Transaction might have been sent to the network.<br /><br />Please, check transactions before attempting to make it again.',
+			unknownMessage: 'NCC hat keine Rückmeldung bekommen. Es ist unklar, ob die Transaktion gesendet wurde.<br /><br />Bitte prüfe, ob die Transaktion unter "Transaktionen" aufgelistet wird (Ausgehend oder Ausstehend) und sende sie nur dann noch mal, wenn sie dort nicht vorhanden ist.',
 			appStatus: {
 				nccUnknown: 'NCC-Status ist unbekannt',
 				nccUnavailable: 'NCC ist nicht verfügbar',
@@ -105,8 +105,8 @@ define({
 			dueBy: 'Verfällt in',
 			hours: 'Stunde(n)',
 			hoursDue: 'Deaktivierung verwerfen, wenn sie nicht akzeptiert wird innerhalb (Stunden)',
-			hoursDueExplanation: 'If the transaction isn\'t included by the deadline, it is rejected.',
-			closeButton: 'Close'
+			hoursDueExplanation: 'Falls die Transaktion von der NEM Cloud nicht innerhalb der hier eingestellten Zeit akzeptiert wird, wird sie endgültig abgelehnt.',
+			closeButton: 'Schließen'
 		},
 		transactionTypes: [
 			'XEM-Überweisung',
@@ -136,12 +136,12 @@ define({
 				no: 'Nein'
 			},
 			initialTy: {
-				title: "WELCOME to NEM",
+				title: "Willkommen bei NEM!",
 				content: "<c>Sbhaqrq ba gur fgebat cevapvcyrf bs rtnyvgnevna naq rdhnyvgl va qvfgevohgvba, gur Arj Rpbabzl Zbirzrag, ARZ, unf abj svanyyl pbzr gb sehvgvba nsgre pybfr gb 14 zbaguf bs vagrafvir qrirybczrag. Va nqqvgvba gb 5 pber qrirybcref naq 7 pber znexrgref, jr unir n ubfg bs pbzzhavgl zrzoref jub unir urycrq hf va bar jnl be nabgure, jvgubhg jubz, guvf jbhyq arire unir pbzr gbtrgure fb jryy nf orvat bar bs gur srj pelcgb vavgvngvirf jvgu fhpu n ovt grnz. Fcrpvny zragvba vf tvira gb gur sbyybjvat:</c><ue/><c><o>Grpuavpny naq Znexrgvat vachg:</o><oe/> Nzl, naqzr, nirentrwbr, OenvaBsZnffrf, qmnezhfpu, RSSI, Rynan82, rexxv, servtrvfg, unccl4209, vafgnpnfu, wnqrqwnpx, XrivaYv, XxbgArz, xbbernz, Xelfgb, Ybv Gena, ylxn, zvkznfgre, ZeCbegZna, arzovg, akxbvy, bjba, Cnagure03, curebzbar, erabgrat.yv, evtry, FnhyTenl, funjayrnel, fbyvk, fgbar, guvyba, haibvqcy, munaxnvjra, mbngn87, 守望者, 攻陳τч酨鈊, 清风, 福泽天下</c><ue/><c><o>APP Hfre Vagresnpr genafyngvba:</o><oe/>ncrk, obrfgva, Punbf514, QVZXNMQF, svypurs, servtrvfg, Thyvire, vnzvavgabj06, Wnarn4cqn, xhccnynugv, Ypuneyrf, znegvfznegvf, zrff-yrybhpu, Cnenan, evtry, Funja, Fcvqre, 楊 輝彦</c><c><oe/>Va nqqvgvba gb gur nobir 67 grnz zrzoref, jr nyfb unir bgure zrzoref jub  pbagevohgrq, jurgure va grpuavpny, znexrgvat be fgerff grfgvat gur flfgrz qhevat gur nycun naq orgn cunfr. Jr jbhyq yvxr gb nqqvgvbanyyl gunax nyy gubfr vaqvivqhnyf abg yvfgrq urer naq gur terngre ARZ pbzzhavgl orpnhfr jvgubhg gurz, jr jbhyq unir abg rire pbzr fb sne.</c><ue/><c>Naq zbfg vzcbegnagyl<oe/><o>Gunax LBH!</o><oe/><oe/>Arj Rpbabzl fgnegf jvgu LBH!</c>"
 			},
 			initialBackup: {
-				title: "Welcome to NEM",
-				content: "You can create wallet backup from menu in upper right corner."
+				title: "Willkommen bei NEM!",
+				content: "Es wird empfohlen, ein Brieftaschen-Backup anzulegen. Dies ist über das Menü in der oberen, rechten Ecke möglich."
 			},
 			settings: {
 				title: 'Einstellungen',
@@ -202,7 +202,7 @@ define({
 				fee: 'Gebühr',
 				feeValidation: 'Die Gebühr darf die Mindestgebühr nicht unterschreiten',
 				useMinimumFee: 'Benutze Mindestgebühr',
-				password: 'Passwort',
+				password: 'Passwort der Brieftasche',
 				passwordValidation: 'Das Passwort darf nicht leer sein',
 				send: 'Senden',
 				cancel: 'Abbrechen',
@@ -231,7 +231,7 @@ define({
 				multisigFee: 'Signierungs-Gebühr',
 				feeValidation: 'Die Gebühr darf die Mindestgebühr nicht unterschreiten',
 				useMinimumFee: 'Benutze Mindestgebühr',
-				password: 'Passwort',
+				password: 'Passwort der Brieftasche',
 				passwordValidation: 'Das Passwort darf nicht leer sein',
 				send: 'Senden',
 				cancel: 'Abbrechen',
@@ -304,7 +304,7 @@ define({
 			accountDetails: {
 				title: 'Kontodetails',
 				address: 'Adresse',
-				label: 'Bezeichnung',
+				label: 'Eigene Bezeichnung',
 				noLabel: 'Keine Bezeichnung',
 				add: 'Zum Adressbuch hinzufügen',
 				remove: 'Vom Adressbuch entfernen',
@@ -318,20 +318,20 @@ define({
 			},
 			bootLocalNode: {
 				title: 'NIS booten',
-				account: 'Adresse des Kontos, mit dem der NIS gebootet werden soll',
+				account: 'Adresse des Kontos, mit dem NIS gebootet werden soll',
 				noLabel: '<span class=\'null\'><Keine Bezeichnung></span>',
 				wallet: 'Zugehörige Brieftasche',
 				node: 'Name des NIS',
 				boot: 'Booten',
 				booting: 'Wird gebootet...',
-				warning: 'Boot node warning',
-				warningText: 'You\'re trying to boot a node <u>{{2}}</u><br/><br/>Booting remote node is currently impossible from within NCC.',
-				warningStatement: 'You have auto-boot set to true and you\'re using remote node {{3}}.<br/><br/>Booting remote node is currently impossible from within NCC',
+				warning: 'Warnung',
+				warningText: 'Du versucht NIS zu booten <u>{{2}}</u><br/><br/>Ein Remote-NIS kann jedoch nicht über NCC gebootet werden.',
+				warningStatement: 'Du hast Auto-boot aktiviert und verwendest gerade einen Remote-NIS {{3}}.<br/><br/>Ein Remote-NIS kann jedoch nicht über NCC gebootet werden.',
 				warningQuestion: 'Bist du sicher, dass du den NIS <u>{{3}}</u> mit dem privaten Schlüssel des Kontos {{1}} ({{2}} XEM) booten möchtest?<br><br>Dadurch wird der <span class="sublabelWarning">private Schlüssel</span> des Kontos an diesen NIS übertragen: <u>{{3}}</u>. Es wird empfohlen, NIS nur mit leeren Konten zu booten.'
 			},
 			closeWallet: {
 				title: 'Brieftasche schließen',
-				message: 'Bist Du sicher, dass Du die Brieftasche schließen und zur Startseite wechseln möchtest?'
+				message: 'Bist Du sicher, dass Du die Brieftasche schließen und zurück zur Startseite wechseln möchtest?'
 			},
 			createAccount: {
 				title: 'Neues Konto anlegen',
@@ -342,15 +342,15 @@ define({
 				create: 'Anlegen'
 			},
 			showPrivateKey: {
-				title: 'Show Account\'s PRIVATE Key',
-				message: 'This will display account\'s private key on the screen, as a text. In case of any malware present in the system, this might be hazardous operation. Are you sure you want to do that?',
+				title: 'PRIVATEN Schlüssel des Kontos anzeigen',
+				message: 'Dies wird den privaten Schlüssel des Kontos anzeigen. Falls Schadsoftware (Viren, Trojaner etc.) auf dem System ist, könnte dies ein Sicherheitsrisiko darstellen. Trotzdem fortfahren?',
 				publicKey: 'Öffentlicher Schlüssel',
 				privateKey: 'Privater Schlüssel',
-				show: 'Show the key'
+				show: 'Schlüssel anzeigen'
 			},
 			showRemotePrivateKey: {
-				title: 'Show Remote Account\'s PRIVATE Key',
-				message: 'This will display remote account\'s private key on the screen, as a text. In case of any malware present in the system, this might be hazardous operation. Are you sure you want to do that?',
+				title: 'PRIVATEN Schlüssel des Kontos für die delegierte Ernte anzeigen',
+				message: 'Dies wird den privaten Schlüssel des Kontos für die delegierte Ernte anzeigen. Falls Schadsoftware (Viren, Trojaner etc.) auf dem System ist, könnte dies ein Sicherheitsrisiko darstellen. Trotzdem fortfahren?',
 
 			},
 			addAccount: {
@@ -360,7 +360,7 @@ define({
 				password: 'Passwort der Brieftasche',
 				successMessage: 'Das Konto {{1}} {{#2}}({{2}}){{/2}} wurde zur Brieftasche hinzugefügt!',
 				add: 'Hinzufügen',
-				label: 'Bezeichnung'
+				label: 'Eigene Bezeichnung'
 			},
 			setPrimary: {
 				title: 'Hauptkonto festlegen',
@@ -410,46 +410,46 @@ define({
 			},
 			nisUnavailable: {
 				title: 'NIS nicht verfügbar',
-				message: 'Nicht verbunden mit NEM Infrastructure Server (NIS), warte auf die Verbindung'
+				message: 'Nicht verbunden mit NEM Infrastructure Server (NIS), warte auf die Verbindung...'
 			},
 			shutdown: {
 				title: 'Programm schließen',
 				message: 'Bist Du sicher, dass Du den NEM Community Client schließen möchtest?'
 			},
 			activateRemote: {
-				title: 'Activate Delegated Harvesting',
+				title: 'Delegierte Ernte freischalten',
 				wallet: 'Zugehörige Brieftasche',
 				account: 'Adresse des Kontos',
 				password: 'Passwort der Bieftasche',
-				activate: 'Aktivieren',
-				warning: 'Warning',
-				warningText: 'Activation will take 6 hours (360 blocks). Activation will NOT start harvesting automatically.'
+				activate: 'Freischalten',
+				warning: 'Achtung',
+				warningText: 'Das Freischalten der delegierten Ernte dauert ca. 6 Stunden (360 Blöcke) und kostet eine Gebühr. Nachdem die delegierte Ernte freigeschaltet ist, wird sie nicht automatisch gestartet!'
 			},
 			deactivateRemote: {
-				title: 'Deactivate Delegated Harvesting',
+				title: 'Delegierte Ernte deaktivieren',
 				wallet: 'Zugehörige Brieftasche',
 				account: 'Adresse des Kontos',
 				password: 'Passwort der Bieftasche',
 				deactivate: 'Deaktivieren',
-				warning: 'Warning',
-				warningText: 'Deactivation will take 6 hours (360 blocks).'
+				warning: 'Achtung',
+				warningText: 'Die Deaktivierung der delegierten Ernte dauert ca. 6 Stunden (360 Blöcke) und kostet eine Gebühr.'
 			},
 			startRemote: {
-				title: 'Start Delegated Harvesting',
+				title: 'Delegierte Ernte starten',
 				wallet: 'Zugehörige Brieftasche',
 				account: 'Adresse des Kontos',
 				password: 'Passwort der Brieftasche',
 				start: 'Starten'
 			},
 			stopRemote: {
-				title: 'Stop Delegated Harvesting',
+				title: 'Delegierte Ernte beenden',
 				wallet: 'Zugehörige Brieftasche',
 				account: 'Adresse des Kontos',
 				password: 'Passwort der Brieftasche',
 				stop: 'Beenden'
 			},
 			logoutWarning: {
-				leavePage: "You're leaving your wallet. Remember that if you leave your wallet this way, some others may still be able to access your wallet from this computer. To prevent that from happening, please log out using the \"Close wallet\" menu item in the top-right dropdown menu before you close the browser tab or navigate away."
+				leavePage: "Du verlässt deine Brieftasche. Bitte beachte, dass der Zugang zu deiner Brieftasche so nicht gesperrt wird und Unbefugte Zugriff erhalten könnten. Um dies zu verhindern, verlasse deine Brieftasche bitte über das Menü in der oberen, rechten Ecke (Brieftasche schließen), bevor du den Tab oder den Browser schließt."
 			},
 			addContact: {
 				title: 'Kontakt hinzufügen',
@@ -474,9 +474,9 @@ define({
 			},
 			main: {
 				leftTitle: 'Neu bei <em>NEM</em>?',
-				leftButton: 'Brieftasche anlegen',
+				leftButton: 'Neue Brieftasche anlegen',
 				walletNamePlh: 'Name Deiner Brieftasche',
-				passwordPlh: 'Passwort',
+				passwordPlh: 'Passwort wählen',
 				confirmPasswordPlh: 'Passwort bestätigen',
 				create: 'Anlegen',
 				creating: 'Wird angelegt...',
@@ -494,26 +494,26 @@ define({
 					},
 					{
 						title: 'Remote NEM Infrastructure Server',
-						description: 'By using a remote NIS you don\'t have to synchronise the blockchain at start-up.',
+						description: 'Wenn du einen remote NIS benutzt, muss die Blockchain nicht heruntergeladen/synchronisiert werden.',
 
 					},
 					{
-						title: 'Delegated harvesting',
-						description: 'With delegated harvesting you can harvest on remote NIS nodes!',
+						title: 'Delegierte Ernte',
+						description: 'Mit der delegierten Ernte kannst du auf externen Servern ernten und musst deinen eigenen Computer nicht laufen lassen!',
 
 					},
 					{
-						title: 'Multisignature transactions',
-						description: 'Secure your XEM and assets via in-blockchain multi-signature transactions.',
+						title: 'Multisig-Überweisungen',
+						description: 'Schütze deine XEM und Anlagen durch Blockchain-basierte Multisig-Überweisungen.',
 
 					},
 					{
-						title: 'Native language support',
-						description: 'NEM user interface supports multiple languages. See "Settings".'
+						title: 'Viele Sprachen verfügbar',
+						description: 'NEM ist in vielen Sprachen verfügbar. Siehe "Einstellungen".'
 					},
 					{
-						title: 'Got any questions or feedback ?',
-						description: '<a href="http://forum.ournem.com">forum.ournem.com</a> | #ournem on freenode.org | Telegram',
+						title: 'Fragen oder Feedback?',
+						description: '<a href="http://forum.ournem.com">forum.ournem.com</a> | IRC: #ournem | Telegram-Gruppenchats',
 
 					}
 				]
@@ -566,9 +566,9 @@ define({
 				createAccount: 'Neues Konto anlegen',
 				createRealAccountData: 'Daten für ein echtes Konto erzeugen',
 				verifyRealAccountData: 'Daten eines echten Kontos verifizieren',
-				showPrivateKey: 'Show Account\'s PRIVATE key',
-				showRemotePrivateKey: 'Show Remote Account\'s PRIVATE key',
-				viewDetails: 'View Account Details',
+				showPrivateKey: 'PRIVATEN Schlüssel des Kontos anzeigen',
+				showRemotePrivateKey: 'PRIVATEN Schlüssel des Kontos für die delegierte Ernte anzeigen',
+				viewDetails: 'Kontodetails anzeigen',
 				addAccount: 'Existierendes Konto hinzufügen',
 				changeAccountLabel: 'Bezeichnung des Kontos ändern',
 				setPrimary: 'Als Hauptkonto festlegen',
@@ -577,8 +577,8 @@ define({
 				closeWallet: 'Brieftasche schließen',
 				closeProgram: 'Programm beenden',
 				copyClipboard: 'Adresse in die Zwischenablage kopieren',
-				copyDisabled: 'Copying an address requires flash',
-				convertMultisig: 'Konvertiere anderes Konto in Multisig-Konto'
+				copyDisabled: 'Das Kopieren einer Adresse in die Zwischenablage erfordert Adobe Flash',
+				convertMultisig: 'Ein anderes Konto in Multisig-Konto konvertieren'
 			},
 			nav: [
 				'Übersicht',
@@ -602,19 +602,19 @@ define({
 			importance: {
 				title: 'Wichtigkeit',
 				unknown: 'Unbekannter Status',
-				start: 'Ernte beginnen',
+				start: 'Ernte starten',
 				harvesting: 'Es wird geerntet',
 				stop: 'Ernte beenden',
 				description: 'Wichtigkeit des Kontos für die NEM Cloud',
 				remoteHarvest: {
-					activate: 'Activate delegated harvesting',
-					activating: 'Activating delegated harvesting...',
-					active: 'Delegated harvesting is active',
-					deactivate: 'Deactivate delegated harvesting',
-					deactivating: 'Deactivating delegated harvesting...',
-					startRemoteHarvesting: 'Start delegated harvesting',
-					remotelyHarvesting: 'Sichere Ernte',
-					stopRemoteHarvesting: 'Stop delegated harvesting'
+					activate: 'Delegierte Ernte freischalten',
+					activating: 'Delegierte Ernte wird freigeschaltet...',
+					active: 'Delegierte Ernte ist freigeschaltet',
+					deactivate: 'Delegierte Ernte deaktivieren',
+					deactivating: 'Delegierte Ernte wird deaktiviert...',
+					startRemoteHarvesting: 'Delegierte Ernte starten',
+					remotelyHarvesting: 'Delegierte Ernte',
+					stopRemoteHarvesting: 'Delegierte Ernte beenden'
 				}
 			},
 			transactions: {
@@ -622,12 +622,12 @@ define({
 				sendNem: 'XEM senden',
 				signMultisig: 'Signieren',
 				balance: 'Kontostand',
-				loading: 'Loading balance',
+				loading: 'Lade Kontostand...',
 				accountCosignatories: 'Multisig-Konto',
-				accountCosignatoriesView: 'view cosignatories',
+				accountCosignatoriesView: 'Mitsignierer anzeigen',
 				vestedBalance: 'Für Ernte verwendbarer Anteil',
 				syncStatus: '(Block {{1}}{{#2}} : etwa {{3}} Tage im Rückstand{{/2}})',
-				notSynced: 'might be inaccurate, NIS not synchronized yet',
+				notSynced: 'könnte falsch sein, NIS ist nicht synchron',
 				unknown: 'unbekannt',
 				columns: [
 					'',
@@ -706,12 +706,12 @@ define({
 			},
 			harvesting: {
 				unknown: 'Unbekannter Status',
-				start: 'Ernte beginnen',
+				start: 'Ernte starten',
 				harvesting: 'Ernte',
 				stop: 'Ernte beenden',
 				remoteHarvest: {
-					startRemoteHarvesting: 'Start delegated harvesting',
-					stopRemoteHarvesting: 'Stop delegated harvesting'
+					startRemoteHarvesting: 'Delegierte Ernte starten',
+					stopRemoteHarvesting: 'Delegierte Ernte beenden'
 				}
 			}
 		},
