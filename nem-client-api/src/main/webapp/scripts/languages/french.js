@@ -80,7 +80,7 @@ define({
 				nisUnknown: 'Le statut de NIS est incconnu',
 				nisUnavailable: 'NIS est introuvable',
 				nisStarting: 'NIS démarre...',
-				notBooted: 'NIS à besoin d\'être démarré. S\'il vous plaît, ouvrez votre portefeuille et démarrer le noeud local via la boîte de dialogue ou configuré le paramètre de démarrage automatique.',
+				notBooted: 'NIS à besoin d\'être démarré. S\'il vous plaît, ouvrez votre portefeuille et démarrez le nœud local via la boîte de dialogue ou configurez le paramètre de démarrage automatique.',
 				loading: 'Chargement des blocs de la base de donnée, présentement au bloc:',
 				booting: 'Démarrage de NIS...',
 				nisInfoNotAvailable: 'L\'information sur NIS n\'est pas encore disponible. Tentative de récupération de l\'information sur NIS...',
