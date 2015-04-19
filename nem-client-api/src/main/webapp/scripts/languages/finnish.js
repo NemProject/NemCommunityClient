@@ -44,7 +44,7 @@ define({
 			601: 'NIS on jo käynnistetty uudelleen.',
 			602: 'Melkein valmista. NIS lataa lohkoja. Lompakko on käytettävissä, kun tietokanta on täysin ladattu.',
 			699: 'Louhijoiden maksimimäärä palvelimella on saavutettu.',
-			700: 'Louhintaa ei voida aloittaa. Toiminto on mahdollista, kun tilisi saldo on vähintään 1000 XEM.',
+			700: 'Louhintaa ei voida aloittaa. Toiminto on mahdollista, kun tilisi saldo on vähintään 10000 XEM.',
 			701: 'Aikaraja on ylitetty. Aikaraja on oltava yhden päivän sisällä.',
 			702: 'Valittu aikaraja on liian kaukana tulevaisuudessa. Aikaraja täytyy olla yhden päivän sisällä.',
 			703: 'Tilisi saldo ei ole oikea tälle siirrolle.',

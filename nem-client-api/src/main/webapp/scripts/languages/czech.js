@@ -44,7 +44,7 @@ define({
 			601: 'Tento uzel je již nabútován. Další pokus bútovat NIS není možný.',
 			602: 'Almost ready. NEM Infrastructure Server is currently loading blocks. Wallet will be functional when db is fully loaded.',
 			699: 'Maximum number of harvesters allowed on server has been reached.',
-			700: 'Daný účet nesplňuje základní kritéria pro zahájení sklizně. Většinou se tento problém týká nedostatečního množství Nemů na účtu. Sklizeň začíná s minimální hodnotou 1000 NEM.',
+			700: 'Daný účet nesplňuje základní kritéria pro zahájení sklizně. Většinou se tento problém týká nedostatečního množství Nemů na účtu. Sklizeň začíná s minimální hodnotou 10000 NEM.',
 			701: 'Zadaný termín se nachází v minulosti. Termín musí být zadán do období 1 den.',
 			702: 'Zadaný termín se nachází v příliš daleké budoucnosti. Termín musí být zadán do období 1 den.',
 			703: 'Your account does not have the right balance to make this transaction.',

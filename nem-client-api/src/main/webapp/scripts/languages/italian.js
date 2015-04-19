@@ -44,7 +44,7 @@ define({
 			601: 'Il nodo NIS locale è già avviato; non è possibile avviarlo nuovamente.',
 			602: 'Almost ready. NEM Infrastructure Server is currently loading blocks. Wallet will be functional when db is fully loaded.',
 			699: 'E\' stato raggiunto il numero massimo di indirizzi che generano blocchi.',
-			700: 'L\'indirizzo indicato non soddisfa i criteri minimi per generare blocchi. Per poter generare blocchi è necessario disporre di almeno 1000 XEM',
+			700: 'L\'indirizzo indicato non soddisfa i criteri minimi per generare blocchi. Per poter generare blocchi è necessario disporre di almeno 10000 XEM',
 			701: 'Il termine massimo indicato è nel passato. Dovrebbe invece essere nelle prossime 24 ore.',
 			702: 'Il termine massimo indicato è troppo lontano nel futuro. Dovrebbe invece essere nelle prossime 24 ore.',
 			703: 'Your account does not have the right balance to make this transaction.',
