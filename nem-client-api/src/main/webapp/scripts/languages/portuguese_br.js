@@ -44,7 +44,7 @@ define({
 			601: 'O NIS já foi inicializado.',
 			602: 'Quase pronto. O cliente NEM está carregando os blocos. A carteira se tornará funcional quando tiver o banco de dados completamente carregado.',
 			699: 'O número de máximo de colheitadores no servidor foi atingido.',
-			700: 'Falha na colheita. Geralmente esse problema está relacionado com o saldo de NEMs na conta. Para colheitar são necessários,  pelo menos, 1000 XEMs.',
+			700: 'Falha na colheita. Geralmente esse problema está relacionado com o saldo de NEMs na conta. Para colheitar são necessários,  pelo menos, 10000 XEMs.',
 			701: 'O prazo final fornecido está no passado. O prazo limite deve estar dentro do período de um dia.',
 			702: 'O prazo final fornecido está no futuro. O prazo limite deve estar dentro do período de um dia.',
 			703: 'A sua conta não tem o saldo suficiente para realizar essa transação.',

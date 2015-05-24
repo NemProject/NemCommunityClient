@@ -44,7 +44,7 @@ define({
 			601: 'NIS čvor je već pokrenut. Sljedeći pokušaj za pokretanje NIS čvora nije moguć.',
 			602: 'Skoro spreman. NEM infrastrukturni poslužitelj trenutno učitava blokove. Novčanik će biti funkcionalan nakon što se baza u potpunosti učita.',
 			699: 'Dostignut je najveći dopušteni broj žetveoca na poslužitelju.',
-			700: 'Navedeni račun ne ispunjava osnovne kriterije za ubiranje blokova. Za ubiranje blokova račun mora sadržavati najmanje iznos od 1000 XEM-a.',
+			700: 'Navedeni račun ne ispunjava osnovne kriterije za ubiranje blokova. Za ubiranje blokova račun mora sadržavati najmanje iznos od 10000 XEM-a.',
 			701: 'Datum isteka je u prošlosti. Datum isteka mora biti u roku od jednog dana.',
 			702: 'Datum isteka je predaleko u budućnosti. Datum isteka mora biti u roku od jednog dana.',
 			703: 'Vaš račun ne sadrži ispravan iznos za izvršavanje te transakcije.',

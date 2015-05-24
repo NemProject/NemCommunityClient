@@ -44,7 +44,7 @@ define({
 +			601: 'Le nœud NIS est déjà démarré. Une deuxième tentative de démarrage du nœud est impossible.',
 			602: 'Presque disponible. Le serveur d\'infrastructure NEM charge présentement les blocs. Le portefeuille sera fonctionnel dès que la base de données sera complètement chargée.',
 			699: 'Le nombre maximum de cueilleurs permis sur le serveur a été atteint.',
-			700: 'Le compte fourni ne satisfait pas les critères de base pour la récolte. C\'est généralement lié à la quantité de XEM dans le compte. Le compte doit avoir au minimum 1000 XEM pour que la récolte débute.',
+			700: 'Le compte fourni ne satisfait pas les critères de base pour la récolte. C\'est généralement lié à la quantité de XEM dans le compte. Le compte doit avoir au minimum 10000 XEM pour que la récolte débute.',
 			701: 'La date limite fournie est dans le passé. La date limite doit être dans un délai dune journée.',
 			702: 'La date limite fournie est trop dans le futur. La date limite doit être dans un délai dune journée.',
 			703: 'Votre compte n\'a pas les fonds nécessaires pour effectuer cette transaction.',

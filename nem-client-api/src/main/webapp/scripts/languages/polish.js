@@ -44,7 +44,7 @@ define({
 			601: 'Węzeł NIS jest już uruchomiony. Nie można uruchomić go po raz drugi.',
 			602: 'Prawie gotowe. Serwer Infrastruktury NEM laduje bloki. Portfel będzie działać, gdy baza danych sie zaladuje.',
 			699: 'Maksymalna ilość zbieraczy dozwolona na serwerze została osiągnięta.',
-			700: 'Konto nie spełnia podstawowych wymagań do zbierania bloków. Głównie jest to związane z ilością XEM na koncie. Zbieranie wymaga minimum 1000 XEM na koncie.',
+			700: 'Konto nie spełnia podstawowych wymagań do zbierania bloków. Głównie jest to związane z ilością XEM na koncie. Zbieranie wymaga minimum 10000 XEM na koncie.',
 			701: 'Podany termin jest w przeszłości. Termin musi się zawierać w okresie jednego dnia.',
 			702: 'Podany termin jest zbyt daleko w przyszłości. Termin musi się zawierać w okresie jednego dnia.',
 			703: 'Twoje konto nie ma wystarczajacych srodkow aby wykonac ta transakcje.',

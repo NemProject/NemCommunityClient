@@ -44,7 +44,7 @@ define({
 			601: 'NISノードはすでに起動しています。NISは複数起動することができません。',
 			602: 'Almost ready. NEM Infrastructure Server is currently loading blocks. Wallet will be functional when db is fully loaded.',
 			699: 'Maximum number of harvesters allowed on server has been reached.',
-			700: '入力されたアカウントがハーベストのための基準を満たしていません。その基準はそのアカウントにあるXEMの量が関係しています。ハーベストは少なくとも1000XEMから始めることができます。',
+			700: '入力されたアカウントがハーベストのための基準を満たしていません。その基準はそのアカウントにあるXEMの量が関係しています。ハーベストは少なくとも10000XEMから始めることができます。',
 			701: '提供期限が過ぎています。期限は1日の間です。',
 			702: '提供期限はまだ先です。期間は1日の間です。',
 			703: 'Your account does not have the right balance to make this transaction.',

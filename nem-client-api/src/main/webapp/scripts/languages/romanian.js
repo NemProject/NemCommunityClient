@@ -44,7 +44,7 @@ define({
 			601: 'Nodul NIS este deja pornit. O a doua încercare de a porni nodul NIS nu este posibilă.',
 			602: 'Almost ready. NEM Infrastructure Server is currently loading blocks. Wallet will be functional when db is fully loaded.',
 			699: 'Maximum number of harvesters allowed on server has been reached.',
-			700: 'Contul furnizat nu satisface criteriul de bază pentru recoltare. În mod special, problema are legatură cu suma de XEM disponibilă în cont. Recoltarea poate începe cu minim 1000 XEM.',
+			700: 'Contul furnizat nu satisface criteriul de bază pentru recoltare. În mod special, problema are legatură cu suma de XEM disponibilă în cont. Recoltarea poate începe cu minim 10000 XEM.',
 			701: 'Data scadentă furnizată este din trecut. Scadența trebuie introdusă cu o perioadă de grație de o zi.',
 			702: 'Data scadentă introdusă este prea îndepărtată în viitor. Scadența trebuie introdusă cu o perioadă de grație de o zi.',
 			703: 'Your account does not have the right balance to make this transaction.',

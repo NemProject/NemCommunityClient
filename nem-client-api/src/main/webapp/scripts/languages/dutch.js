@@ -44,7 +44,7 @@ define({
 			601: 'De NIS node is al gestart. Een tweede poging om te starten is niet mogelijk.',
 			602: 'Almost ready. NEM Infrastructure Server is currently loading blocks. Wallet will be functional when db is fully loaded.',
 			699: 'Maximaal aantal harvesters toegestaan op deze server is reeds bereikt.',
-			700: 'De opgegeven account voldoet niet aan de basis criteria om te harvesten/oogsten. Waarschijnlijk heeft dat te maken met het aantal XEM wat zich in de account bevindt. Harvesten begint bij tenminste 1000 XEM.',
+			700: 'De opgegeven account voldoet niet aan de basis criteria om te harvesten/oogsten. Waarschijnlijk heeft dat te maken met het aantal XEM wat zich in de account bevindt. Harvesten begint bij tenminste 10000 XEM.',
 			701: 'De termijn ligt in het verleden en kan alleen geldig zijn binnen een periode van 1 dag.',
 			702: 'De termijn ligt te ver in de toekomst en kan alleen geldig zijn binnen een periode van 1 dag.',
 			703: 'Your account does not have the right balance to make this transaction.',

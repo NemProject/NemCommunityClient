@@ -44,7 +44,7 @@ define({
 			601: 'The NEM Infrastructure Server (NIS) is already booted.',
 			602: 'Almost ready. NEM Infrastructure Server is currently loading blocks. Wallet will be functional when db is fully loaded.',
 			699: 'Maximum number of harvesters allowed on server has been reached.',
-			700: 'The provided account does not satisfy the basic criteria for harvesting. Mainly it is related to the amount of XEM within the account. Harvesting starts with at least 1000 XEM.',
+			700: 'The provided account does not satisfy the basic criteria for harvesting. Mainly it is related to the amount of XEM within the account. Harvesting starts with at least 10000 vested XEM.',
 			701: 'The provided deadline is in the past. The deadline must be provided within a 1 day period.',
 			702: 'The provided deadline is too far in the future. The deadline must be within one day time period.',
 			703: 'Your account does not have the right balance to make this transaction.',

@@ -44,7 +44,7 @@ define({
 			601: 'NIS node đã được boot rồi. Không thể boot NIS thêm một lần nữa.',
 			602: 'Almost ready. NEM Infrastructure Server is currently loading blocks. Wallet will be functional when db is fully loaded.',
 			699: 'Maximum number of harvesters allowed on server has been reached.',
-			700: 'Tài khoản được cung cấp không thoả mãn các tiêu chí cơ bản để được thu hoạch. Phần lớn liên quan tới lượng XEM có trong tài khoản. Việc thu hoạch có thể bắt đầu với ít nhất 1000 XEM.',
+			700: 'Tài khoản được cung cấp không thoả mãn các tiêu chí cơ bản để được thu hoạch. Phần lớn liên quan tới lượng XEM có trong tài khoản. Việc thu hoạch có thể bắt đầu với ít nhất 10000 XEM.',
 			701: 'Deadline được cung cấp đã trôi qua.',
 			702: 'Deadline được cung cấp quá xa trong tương lai.',
 			703: 'Your account does not have the right balance to make this transaction.',
