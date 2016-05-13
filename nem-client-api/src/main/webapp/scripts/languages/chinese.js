@@ -117,18 +117,18 @@ define({
 			account: '帐户',
 			thisAccount: '本账户',
 			warning: '警告',
-			newBuild: 'NEW BUILD',
-			newBuildNumber: 'There is new build {{1}} available for download. Check <a class="hyperlink--default", href="http://blog.nem.io">blog.nem.io</a> for details',
+			newBuild: '新版本',
+			newBuildNumber: '新版本{{1}} 已发布可下载， 点击 <a class="hyperlink--default", href="http://blog.nem.io">blog.nem.io</a> 查看。',
 
 		},
 		transactionTypes: {
 			20: '传输交互',
 			21: '重要性传输',
 			22: '多重签名账户变更',
-			23: 'PROVISION NAMESPACE',
-			24: 'MOSAIC CREATION',
-			25: 'MOSAIC SUPPLY',
-			40: 'MULTISIG SIGNATURE',
+			23: '部署命名空间',
+			24: '马赛克创建',
+			25: '马赛克提供',
+			40: '多重签名',
 			50: '多重签名交互',
 			51: '多重签名交互',
 			52: '多重签名交互',
@@ -144,9 +144,9 @@ define({
 			self: '自我交互',
 			importance: '重要性交互',
 			modification: '多重签名账户协同变更',
-			provision: 'Provision Namespace',
-			mosaicCreation: 'Mosaic Creation',
-			mosaicSupply: 'Mosaic Supply'
+			provision: '部署命名空间',
+			mosaicCreation: '马赛克创建',
+			mosaicSupply: '马赛克提供'
 		},
 		modals: {
 			error: {
@@ -160,6 +160,10 @@ define({
 			confirmDefault: {
 				yes: '是',
 				no: '否'
+			},
+			initialTy: {
+				title: "欢迎来到NEM",
+				content: "<c>Sbhaqrq ba gur fgebat cevapvcyrf bs rtnyvgnevna naq rdhnyvgl va qvfgevohgvba, gur Arj Rpbabzl Zbirzrag, ARZ, unf abj svanyyl pbzr gb sehvgvba nsgre pybfr gb 14 zbaguf bs vagrafvir qrirybczrag. Va nqqvgvba gb 5 pber qrirybcref naq 7 pber znexrgref, jr unir n ubfg bs pbzzhavgl zrzoref jub unir urycrq hf va bar jnl be nabgure, jvgubhg jubz, guvf jbhyq arire unir pbzr gbtrgure fb jryy nf orvat bar bs gur srj pelcgb vavgvngvirf jvgu fhpu n ovt grnz. Fcrpvny zragvba vf tvira gb gur sbyybjvat:</c><ue/><c><o>Grpuavpny naq Znexrgvat vachg:</o><oe/> Nzl, naqzr, nirentrwbr, OenvaBsZnffrf, qmnezhfpu, RSSI, Rynan82, rexxv, servtrvfg, unccl4209, vafgnpnfu, wnqrqwnpx, XrivaYv, XxbgArz, xbbernz, Xelfgb, Ybv Gena, ylxn, zvkznfgre, ZeCbegZna, arzovg, akxbvy, bjba, Cnagure03, curebzbar, erabgrat.yv, evtry, FnhyTenl, funjayrnel, fbyvk, fgbar, guvyba, haibvqcy, munaxnvjra, mbngn87, 守望者, 攻陳τч酨鈊, 清风, 福泽天下</c><ue/><c><o>APP Hfre Vagresnpr genafyngvba:</o><oe/>ncrk, obrfgva, Punbf514, QVZXNMQF, svypurs, servtrvfg, Thyvire, vnzvavgabj06, Wnarn4cqn, xhccnynugv, Ypuneyrf, znegvfznegvf, zrff-yrybhpu, Cnenan, evtry, Funja, Fcvqre, 楊 輝彦</c><c><oe/>Va nqqvgvba gb gur nobir 67 grnz zrzoref, jr nyfb unir bgure zrzoref jub  pbagevohgrq, jurgure va grpuavpny, znexrgvat be fgerff grfgvat gur flfgrz qhevat gur nycun naq orgn cunfr. Jr jbhyq yvxr gb nqqvgvbanyyl gunax nyy gubfr vaqvivqhnyf abg yvfgrq urer naq gur terngre ARZ pbzzhavgl orpnhfr jvgubhg gurz, jr jbhyq unir abg rire pbzr fb sne.</c><ue/><c>Naq zbfg vzcbegnagyl<oe/><o>Gunax LBH!</o><oe/><oe/>Arj Rpbabzl fgnegf jvgu LBH!</c>"
 			},
 			initialBackup: {
 				title: "欢迎来到NEM",
@@ -190,10 +194,10 @@ define({
 				saveSuccess: '设置保存成功'
 			},
 			signToken: {
-				title: "Sign a token using account",
-				label: "Token (url, string, anything)",
-				signature: "Signed token",
-				sign: "Sign"
+				title: "用账户签署一个串码",
+				label: "串码 (地址, 字符串, 任何东西)",
+				signature: "签署码",
+				sign: "签署"
 			},
 			multisig: {
 				title: '转换为多重签名账号',
@@ -209,11 +213,11 @@ define({
 
 				},
 				warning: '多重签名账户本身不可以作为共同签署人。这样做会把账户彻底锁死无法发出交互。估计您<b>不会</b>想要这么做。',
-				minCosignatoriesDefaultLabel: 'Use default cosignatories number',
-				minCosignatoriesRelativeLabel: 'relative change',
-				minCosignatoriesLabel: 'Minimum number of cosignatories',
-				minCosignatoriesZero: 'Using zero would cause all cosignatories to be required',
-				minCosignatoriesOverflow: 'Specified number is larger than number of cosignatories'
+				minCosignatoriesDefaultLabel: '使用默认签署人数量',
+				minCosignatoriesRelativeLabel: '关联变更',
+				minCosignatoriesLabel: '最少共签人数量',
+				minCosignatoriesZero: '使用零将会需要 所有共签人签名',
+				minCosignatoriesOverflow: '指定人数大于所有共签人数'
 			},
 			signMultisig: {
 				title: '签署多重签名交互',
@@ -249,7 +253,7 @@ define({
 				message: '信息',
 				encrypt: '加密',
 				sending: '正在发送...',
-				successMessage: 'Your transaction has been sent successfully! <br><br>Transaction hash: {{1}}',
+				successMessage: '您的交互已经成功发送! <br><br>交互hash: {{1}}',
 				txConfirm: {
 					title: '确认交易',
 					amount: '金额',
@@ -308,26 +312,24 @@ define({
 				confirmations: '确认',
 				confirmationsUnknown: '未知',
 				amount: '金额',
-				multiplier: 'Multiplier',
 				innerFee: '内部费用',
 				multisigFees: '多重签名费用',
 				cosignatory: '共同签署人',
-				namespace: 'Namespace',
-				rentalFee: 'Rental fee',
-				mosaicName: 'Mosaic Name',
-				mosaicQuantity: 'Mosaic quantity',
-				mosaicLevy: 'Mosaic levy',
-				description: 'Description',
-				propertiesLabel: 'Properties',
+				namespace: '命名空间',
+				rentalFee: '租金费用',
+				mosaicName: '马赛克名称',
+				mosaicQuantity: '马赛克数量',
+-				mosaicLevy: '马赛克税金',
+				description: '描述',
+				propertiesLabel: '属性',
 				properties: {
-					divisibility: 'Divisibility',
-					initialSupply: 'Initial supply',
-					supplyMutable: 'Is supply mutable',
-					transferable: 'Is transferable'
+					divisibility: '可分性',
+					quantity: '最大数量',
+					mutablequantity: '可变数量',
+					transferable: '可传输性'
 				},
-				supplyType: 'Supply type',
-				supplyAmount: 'Supply amount',
-
+				supplyType: '供给类型',
+				supplyAmount: '供给量'
 			},
 			accountDetails: {
 				title: '账户细节',
@@ -440,15 +442,15 @@ define({
 				wallet: '钱包',
 				activate: '激活',
 				warningText: '激活会花费6小时的时间 (360块)。激活操作并不会开启收获。',
-				delegatedAccount: 'Delegated account public key',
-				builtIn: 'built into the wallet',
+				delegatedAccount: '委托账户公钥',
+				builtIn: '钱包内建',
 
 			},
 			deactivateDelegated: {
 				title: '取消激活委托收获',
 				wallet: '钱包',
 				deactivate: '停止激活',
-				warningText: '解除激活会花费6小时的时间 (360块)。'
+				warningText: '解除激活会花费约6小时的时间 (360块)。'
 			},
 			startRemote: {
 				title: '开启委托收获',
@@ -604,13 +606,13 @@ define({
 				'帐户',
 				'设置',
 				'关闭程序',
-				'Namespaces & Mosaics'
+				'命名空间和马赛克'
 			],
 			bootNodeWarning: '启用本地节点后，才能充分使用NCC的功能。'
 		},
 		dashboard: {
 			assets: {
-				title: 'Your Mosaics'
+				title: '你的资产'
 			},
 			importance: {
 				title: '重要性',
@@ -629,7 +631,7 @@ define({
 					startRemoteHarvesting: '开启委托收获',
 					remotelyHarvesting: '远程收获',
 					stopRemoteHarvesting: '停止委托收获',
-					multisigInfo: 'Activation or deactivation of a delegated harvesting for a multisig account must be done from one of cosignatory accounts',
+					multisigInfo: '对一个账户激活或反激活委托收货需在一个共同签署人账户执行。',
 
 				}
 			},
@@ -642,7 +644,7 @@ define({
 				accountCosignatories: '多重签名账户',
 				accountCosignatoriesView: '查看共同签署人',
 				vestedBalance: '账户当前余额',
-				syncStatus: '(现区块{{1}}{{#2}} : 估计{{3}}落后{{/2}}天)',
+				syncStatus: '(现区块{{1}}{{#2}} : 估计{{3}}落后{{/2}})',
 				notSynced: 'NIS可能尚未完成同步。',
 				unknown: '未知',
 				columns: [
@@ -706,28 +708,28 @@ define({
 				loading: '载入更多的交易...'
 			}
 		},
-		namespacesmosaics: {
-			title: 'Namespaces & Mosaics',
-			newNamespace: 'New Namespace',
-			newMosaic: 'New Mosaic',
-			balance: '目前余额',
-			filters: {
-				displayAll: 'Display all',
-				displayMineonly: 'Display mine only',
-				filterNamespace: 'Filter Namespace:',
-				filterMosaic: 'Filter Mosaic:'
-			},
-			table: {
-				columns: [
-					'',
-					'Namespace & Mosaic',
-					'Creation',
-					'Expiration (est.)'
-				],
-				loading: 'Loading Namespaces & Mosaics...',
-				subNamespace: 'sub-namespace'
-			}
-		},
+			namespacesmosaics: {
+-			title: '命名空间和马赛克',
+-			newNamespace: '新建命名空间',
+-			newMosaic: '新建马赛克',
+-			balance: '目前余额',
+-			filters: {
+-				displayAll: '显示全部',
+-				displayMineonly: '只显示本账户所属',
+-				filterNamespace: '筛选命名空间:',
+-				filterMosaic: '筛选马赛克:'
+-			},
+-			table: {
+-				columns: [
+-					'',
+-					'命名空间和马赛克',
+-					'创建',
+-					'过期时间 (est.)'
+-				],
+-				loading: '命名空间和马赛克加载中...',
+-				subNamespace: '子命名空间'
+-			}
+-		},
 		harvestedBlocks: {
 			title: '收获区块',
 			feeEarned: '最新挖出的25个区块的报酬',
