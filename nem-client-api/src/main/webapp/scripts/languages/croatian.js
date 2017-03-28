@@ -1,6 +1,6 @@
 define({
 	id: 'hr',
-	name: 'hrvatski',
+	name: 'Hrvatski',
 	texts: {
 		preferences: {
 			thousandSeparator: ' ',
