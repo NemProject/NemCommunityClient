@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.nem.ncc</groupId>
     <artifactId>nem-client-api</artifactId>
-    <version>0.6.93-BETA</version>
+    <version>0.6.95-BETA</version>
     <name>NEM Community Client - NCC</name>
 
     <organization>
@@ -33,7 +33,7 @@
         <!-- http://central.maven.org/maven2/org/eclipse/jetty/jetty-maven-plugin/ -->
         <jetty.version>9.2.11.v20150529</jetty.version>
         <spring.version>4.1.6.RELEASE</spring.version>
-        <nemcore.version>0.6.93-BETA</nemcore.version>
+        <nemcore.version>0.6.95-BETA</nemcore.version>
     </properties>
 
     <dependencies>
