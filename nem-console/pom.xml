@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.nem.console</groupId>
     <artifactId>nem-console</artifactId>
-    <version>0.6.94-BETA</version>
+    <version>0.6.95-BETA</version>
     <name>NEM Console</name>
 
     <organization>
@@ -21,7 +21,7 @@
     </repositories>
 
     <properties>
-        <nemcore.version>0.6.94-BETA</nemcore.version>
+        <nemcore.version>0.6.95-BETA</nemcore.version>
         <nem-code-base>http://bob.nem.ninja/webstart</nem-code-base>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
