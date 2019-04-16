@@ -698,7 +698,7 @@ define(['TransactionType'], function(TransactionType) {
                 roundedDays: roundedDays
             };
         },
-        fixProperties(elem) {
+        fixProperties: function(elem) {
             // TODO 20150810 J-G: i don't really understand why this function is needed ^^
             var properties = elem.properties;
             elem.propertiesMap = {}
@@ -940,14 +940,14 @@ define(['TransactionType'], function(TransactionType) {
             }
             ncc.set('wallet.allMultisigAccounts', allMultisigAccounts);
         },
-        findMosaic(mosaicId) {
+        findMosaic: function(mosaicId) {
             var name = Utils.mosaicName(mosaicId);
             return ncc.get('wallet.allMosaics')[name];
         },
-        mosaicName(mosaicId) {
+        mosaicName: function(mosaicId) {
             return mosaicId.namespaceId + '*' + mosaicId.name;
         },
-        retrieveMosaicDefinitions() {
+        retrieveMosaicDefinitions: function() {
             var wallet = ncc.get('wallet');
             var allAccounts = [wallet.primaryAccount].concat(wallet.otherAccounts);
             var accountsAndRelatedAccounts = {};
