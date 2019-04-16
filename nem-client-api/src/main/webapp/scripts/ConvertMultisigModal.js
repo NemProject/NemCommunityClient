@@ -117,8 +117,7 @@ define(['NccModal', 'Utils', 'TransactionType', 'handlebars', 'typeahead'], func
             var $cosignatory = $('.js-cosignatory').last();
 
             var self = this;
-            $cosignatory.on('paste', function(e) { Utils.mask.paste(e, 'address', self); self.typeaheadHack(); self.resetMinCosignatories(); });
-            $cosignatory.on('keyup blur focus', function(e) {
+            $cosignatory.on('paste keyup blur focus', function(e) {
                 self.resetMinCosignatories();
             });
             $cosignatory
