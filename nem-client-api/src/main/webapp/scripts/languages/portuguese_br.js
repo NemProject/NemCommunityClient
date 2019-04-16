@@ -125,9 +125,9 @@ define({
 			20: 'TRANSAÇÕES DE VALORES',
 			21: 'TRANSFERÊNCIAS DE IMPORTÂNCIA',
 			22: 'MODIFICAÇÃO DE UMA CONTA MULTISIG',
-			23: 'PROVISION NAMESPACE',
-			24: 'MOSAIC CREATION',
-			25: 'MOSAIC SUPPLY',
+			23: 'PROVISÃO DE NAMESPACE',
+			24: 'CRIAÇÃO DE MOSAICO ',
+			25: 'ALIMENTAÇÃO DE MOSAICO',
 			40: 'ASSINATURA MULTISIG',
 			50: 'TRANSAÇÃO MULTISIG',
 			51: 'TRANSAÇÃO MULTISIG',
@@ -144,9 +144,9 @@ define({
 			self: 'Enviada para si mesmo',
 			importance: 'Transação de importância',
 			modification: 'Agregação de modificação Multisig',
-			provision: 'Provision Namespace',
-			mosaicCreation: 'Mosaic Creation',
-			mosaicSupply: 'Mosaic Supply'
+			provision: 'Provisão de Namespace',
+			mosaicCreation: 'Criação de Mosaico',
+			mosaicSupply: 'Alimentação de Mosaico '
 		},
 		modals: {
 			error: {
@@ -210,8 +210,8 @@ define({
 				},
 				warning: 'A conta do tipo Multisig está na lista dos consignatários. Isso resultará no corte de acesso ao dinheiro da conta. Muito provavelmente você <b>NÃO QUER</b> fazer isso.',
 				minCosignatoriesDefaultLabel: 'Usar número co-signatários padrão',
-				minCosignatoriesRelativeLabel: 'relative change',
-				minCosignatoriesLabel: 'Minimum number of cosignatories',
+				minCosignatoriesRelativeLabel: 'Mudança relativa',
+				minCosignatoriesLabel: 'Minimo número de consignatários',
 				minCosignatoriesZero: 'A utilização de zero fará com que seja registrados todos os co-signatários',
 				minCosignatoriesOverflow: 'O número informado é superior ao máximo existente'
 			},
@@ -249,7 +249,7 @@ define({
 				message: 'Mensagem',
 				encrypt: 'Criptografar mensagem',
 				sending: 'Enviando...',
-				successMessage: 'Your transaction has been sent successfully! <br><br>Transaction hash: {{1}}',
+				successMessage: 'A sua transação foi enviada com sucesso! <br><br>Hash de Transação: {{1}}',
 				txConfirm: {
 					title: 'Confirmar Transação',
 					amount: 'Quantidade',
@@ -285,7 +285,7 @@ define({
 				notConnected: 'Desconectado da nuvem de peers',
 				loading: 'Carregando...'
 			},
-			mosaicDetails: 'Mosaic Details',
+			mosaicDetails: 'Detalhes do Mosaico',
 			transactionDetails: {
 				title: 'Detalhes da transação',
 				id: 'ID',
@@ -309,25 +309,25 @@ define({
 				confirmations: 'Confirmações',
 				confirmationsUnknown: 'Desconhecida(o)',
 				amount: 'Quantidade',
-				multiplier: 'Multiplier',
+				multiplier: 'Multiplicador',
 				innerFee: 'Taxas internas',
 				multisigFees: 'Taxas Multisig',
 				cosignatory: 'Cosignatário',
 				namespace: 'Namespace',
-				rentalFee: 'Rental fee',
-				mosaicName: 'Mosaic Name',
-				mosaicQuantity: 'Mosaic quantity',
-				mosaicLevy: 'Mosaic levy',
+				rentalFee: 'taxa de aluguel',
+				mosaicName: 'Nome do Mosaico',
+				mosaicQuantity: 'Quantidade do Mosaico',
+				mosaicLevy: 'Cobrança do Mosaico',
 				description: 'descrição',
 				propertiesLabel: 'Propriedades',
 				properties: {
 					divisibility: 'Divisibilidade',
-					initialSupply: 'Initial supply',
-					supplyMutable: 'Is supply mutable',
-					transferable: 'É trasferível'
+					initialSupply: 'Valor Inicial',
+					supplyMutable: 'É alimentação mutável',
+					transferable: 'É transferível'
 				},
-				supplyType: 'Supply type',
-				supplyAmount: 'Supply amount',
+				supplyType: 'Tipo de alimentação',
+				supplyAmount: 'Quantidade de alimentação ',
 
 			},
 			accountDetails: {
@@ -338,7 +338,7 @@ define({
 				remove: 'Remover do arquivo de contatos',
 				balance: 'Balanço',
 				vested: 'Adquirido',
-				importance: 'Importancia',
+				importance: 'Importância',
 				publicKey: 'Chave Publica',
 				noPublicKey: 'Sem chave públida',
 				harvestedBlocks: 'Blocos colheitados'
@@ -414,8 +414,8 @@ define({
 				passwordNotMatchMessage: 'As senhas não conferem. Por favor, tente novamente.'
 			},
 			exportWalletLight: {
-				title: 'Export for lightwallet',
-				export: 'Export'
+				title: 'Exportar para a lightwallet',
+				export: 'Exportar'
 			},
 			changeAccountLabel: {
 				title: 'Trocar identificação da conta',
@@ -444,9 +444,9 @@ define({
 				title: 'Ativar colheita remota',
 				wallet: 'Carteira',
 				activate: 'Ativar',
-				warningText: 'A ativação leverá 6 houras (360 blocos). A ativação não vaiiniciar automaticamente à colheita.',
+				warningText: 'A ativação leverá 6 horas (360 blocos). A ativação não vai iniciar automaticamente a colheita.',
 				delegatedAccount: 'Chave pública da conta remota',
-				builtIn: 'Está agragada à carteira',
+				builtIn: 'Está agregada à carteira',
 
 			},
 			deactivateDelegated: {
@@ -580,7 +580,7 @@ define({
 				changeWalletPassword: 'Trocar a senha da carteira',
 				mergeWallets: 'Mesclar carteiras',
 				exportWallet: 'Exportar carteira',
-				exportWalletLight: 'Export for Lightwallet',
+				exportWalletLight: 'Exportar para Lightwallet',
 				createAccount: 'Criar uma nova Conta',
 				createRealAccountData: 'Criar dados da conta real',
 				verifyRealAccountData: 'Verificar dados da conta Verdadeira',
@@ -596,7 +596,7 @@ define({
 				closeProgram: 'Fechar programa',
 				copyClipboard: 'Copiar para a área de transferência',
 				copyDisabled: 'Para copiar um endereço, é necessári oter o Adobre Flash instalado.',
-				convertMultisig: 'Converter outra conta para o tipo Multisig'
+				convertMultisig: 'Converter outra conta para o tipo Multisignatátios'
 			},
 			nav: [
 				'Painel Administrativo',
@@ -610,13 +610,13 @@ define({
 				'Contas',
 				'Configurações',
 				'Fechar programa',
-				'Namespaces & Mosaics'
+				'Namespaces & Mosaicos'
 			],
 			bootNodeWarning: 'Um nó local precisa ser inicializado para poder utilizar o NIS.'
 		},
 		dashboard: {
 			assets: {
-				title: 'Your Mosaics'
+				title: 'Seus Mosaicos'
 			},
 			importance: {
 				title: 'Pontuação de importância',
@@ -635,7 +635,7 @@ define({
 					startRemoteHarvesting: 'Iniciar a colheita delegada',
 					remotelyHarvesting: 'Colheitando remotamente!',
 					stopRemoteHarvesting: 'Parar a colheita delegada',
-					multisigInfo: 'Activation or deactivation of a delegated harvesting for a multisig account must be done from one of cosignatory accounts',
+					multisigInfo: 'A Ativação ou desativação de uma colheita delegada de uma conta do tipo Multisig precisa ser realizada de uma das contas dos consignatátios',
 
 				}
 			},
@@ -649,7 +649,7 @@ define({
 				accountCosignatoriesView: 'ver cosignatários',
 				vestedBalance: 'Quantidade investida',
 				syncStatus: '(no bloco {{1}}{{#2}} : encontrado a {{3}} dias atrás{{/2}})',
-				notSynced: 'Pode estar impreciso, NIS aind não está sincronizado',
+				notSynced: 'Pode estar impreciso, NIS ainda não está sincronizado',
 				unknown: 'Desconhecido',
 				columns: [
 					'',
@@ -713,24 +713,24 @@ define({
 			}
 		},
 		namespacesmosaics: {
-			title: 'Namespaces & Mosaics',
-			newNamespace: 'New Namespace',
-			newMosaic: 'New Mosaic',
+			title: 'Namespaces & Mosaicos',
+			newNamespace: 'Novo Namespace',
+			newMosaic: 'Novo Mosaico',
 			balance: 'Saldo',
 			filters: {
-				displayAll: 'Display all',
-				displayMineonly: 'Display mine only',
-				filterNamespace: 'Filter Namespace:',
-				filterMosaic: 'Filter Mosaic:'
+				displayAll: 'Mostrar todos',
+				displayMineonly: 'Mostrar meu somente',
+				filterNamespace: 'Filtrar Namespace:',
+				filterMosaic: 'Filtrar Mosaico:'
 			},
 			table: {
 				columns: [
-					'Owner',
-					'Namespace & Mosaic',
-					'Creation',
-					'Expiration (est.)'
+					'Proprietário',
+					'Namespace & Mosaico',
+					'Criação',
+					'Expiração (est.)'
 				],
-				loading: 'Loading Namespaces & Mosaics...',
+				loading: 'carregando Namespaces & Mosaicos...',
 				subNamespace: 'sub-namespace'
 			}
 		},
